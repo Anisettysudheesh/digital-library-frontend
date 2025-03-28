@@ -1420,7 +1420,10 @@ margin-top:3rem
         display:none
         
     } */
-    
+    .estd{
+        font-size:0.4rem;
+        left:0.4rem
+    }
     .navbar{
         height:50px
     }
