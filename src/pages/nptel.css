@@ -1,0 +1,2140 @@
+
+/* body{
+    background:url("../logos/gist-back-logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+} */
+body {
+    position: relative;
+    background: none; /* Remove the background image from the body */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../logos/gist.jpeg") no-repeat center center fixed;
+     background-size:30%; 
+    opacity: 0.15; /* Adjust the opacity of the image here */
+    z-index: -1; /* Ensure it stays behind all other content */
+}
+
+.nptel-main {
+    display: grid;
+    grid-template-areas: 
+        "navbar navbar navbar"
+        "sidebar content content";
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    width: 100vw;
+}
+.navbar{
+    grid-area: navbar;
+    display: flex;
+    
+  
+    border-bottom: 1px solid black;
+    height:79px;
+    position:fixed;
+    width: 100%
+    
+}
+.nav-img{
+    width: 100%;
+    height: 60px;
+    
+   
+    
+}
+.navbar-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eb7d28f0;
+    margin-right: 0px;
+    border-bottom-left-radius: 20px;
+    height:79px;
+    width:100%;
+    
+    
+   
+
+}
+
+.gist-logo-container{
+    display: flex;
+    flex-direction:column;
+   
+    width:5%
+
+}
+.estd{
+    display:flex;
+    justify-content: center;
+   
+    font-size:0.5rem;
+   
+    font-weight:bold;
+    
+
+}
+.navbar-name h1{
+    margin: 0px;
+    color: #f8f8f8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: -8px;
+}
+.navbar-name h2{
+    margin: 0px;
+    color: #000000;
+    padding: 0px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+.add-nav{
+    margin: 0px;
+    font-size: 0.8rem;
+    margin-top: -10px;
+   
+}
+.nba-logo{
+    width:40px;
+    height:35px;
+   margin-left:5px
+
+}
+.naac-logo{
+    width:50px;
+    height:35px;
+    margin-right:0px;
+    margin-bottom:4.2px
+
+}
+.logos{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    padding:0.2rem;
+    height: 79px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    width:3.2%;
+
+  
+   
+}
+.sidebar-nav {
+    grid-area: sidebar;
+    position: fixed;
+    top: 5.5rem;
+    left: 0;
+    height: 90vh;
+    width: 5%;
+    background: #ffffff;
+    padding: 6px 14px;
+    z-index: 100;
+    transition: all 0.5s ease;
+    height: calc(100vh - 6.5rem);
+   
+}
+
+.sidebar-menu-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    gap: 3rem;
+   
+}
+
+.logo-container-nav {
+    position: relative;
+    display: inline-block;
+}
+
+.logo-container-nav .tooltip-text-nav {
+    visibility: hidden;
+    width: 100px;
+    background-color: #eb7d28f0;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0px 5px 0px;
+    position: absolute;
+    z-index: 1;
+    bottom: 30%; /* Position the tooltip above the logo */
+    left: 130%;
+    margin-left: -50px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.7rem;
+   
+}
+
+.logo-container-nav:hover .tooltip-text-nav {
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+.nptel-logo-nav,
+.book-logo-nav,
+.journal-logo-nav,
+.logout-logo-nav,
+.password-logo-nav,
+.qp-logo-nav {
+    width: 40px;
+    height: 40px;
+    transition:0.2s ease-in-out
+}
+
+.journal-logo-nav {
+    width: 50px;
+    height: 50px;
+    margin-left: -5px;
+    
+   
+}
+
+.menu-1-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.menu-2-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: end;
+}
+
+.book-logo-nav:hover,
+.journal-logo-nav:hover,
+.logout-logo-nav:hover,
+.password-logo-nav:hover,
+.nptel-logo-nav:hover,
+.qp-logo-nav:hover {
+    box-shadow: 1px 2px 2px 1px black;
+    border-radius: 10px;
+}
+.qp-logo-nav{
+    position:relative;
+    height:45px;
+    width:50px;
+    margin-left: -5px;
+}
+.qp{
+   position:absolute;
+   font-size:0.587rem;
+   top:9px;
+   left:15.6px;
+   font-weight:700
+
+    
+}
+
+
+
+
+.nptel-page-content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    /* justify-content: center; */
+   /* margin-left:3rem ;   */
+   margin-top:4.8rem
+    
+}
+.eb{
+    width:70px;
+     height:70px ;
+     margin-top: -4px;
+}
+ h1{
+    display:flex;
+    justify-content: center;
+    font-size: 2.6rem;
+    margin-left:-80px;
+    margin-top:15px
+}
+.nptel-matter{
+    font-size:1.1rem;
+    text-align:center;
+    margin:0 1rem 0 1rem;
+    font-weight:600
+
+}
+
+.btech-branches{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    /* flex-wrap: wrap; */
+    height:180px;
+    gap:1rem;
+    margin-left:-80px
+}
+
+.btech-name{
+  font-size:1.5rem;
+  font-weight: 700;
+  margin-left:15rem;
+  color:#EC8535;
+}
+.branches{
+    display:flex;
+    gap:1rem;
+justify-content: center;
+align-items: center;
+height:fit-content;
+align-self: center;
+flex-wrap: wrap;
+}
+
+.CSE-back,
+.ECE-back,
+.MECH-back,
+.CIVIL-back,
+.EEE-back,
+.SH-back {
+    background-color: #1c2f75;
+    width:160px;
+   
+    border-radius: 10px;
+
+ 
+    
+}
+
+.CSE-back .span,
+.ECE-back .span,
+.CIVIL-back .span,
+.EEE-back .span,
+.SH-back .span {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    border-radius: 10px;
+    font-weight:700;
+    font-size:1.7rem
+   
+}
+
+
+.dce-back,
+.dme-back,
+.deee-back,
+.dcme-back,
+.dece-back{
+    background-color: #EAB4CD;
+    width:160px;
+    height:50px;
+    border-radius: 10px;
+    
+   
+   
+}
+
+
+.dce-back .span,
+.dme-back .span,
+.deee-back .span,
+.dcme-back .span,
+.dece-back .span {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #1c2f75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50px
+    
+   
+}
+.nptel-page-content span{
+    font-size: 1.5rem;
+    font-weight:600;
+    color:white;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+   
+}
+
+
+.btech-name-qp{
+    height:fit-content
+
+}
+.nptel-links-container{
+    display:flex;
+    flex-direction: column ;
+     justify-content: center;
+     align-items: center
+  
+}
+.nptel-logos-container{
+    display: flex;
+    
+    gap:1rem
+}
+.nptel-link img,
+.swayam-link img{
+    width:120px;
+    height: 50px;
+    box-shadow:0px 0 1px 2px rgb(178, 167, 167);
+    border-radius:10px
+   
+  
+}
+
+.explore-matter{
+   
+    font-size:1.2rem;
+    font-weight:700;
+} 
+.line{
+    width:50px;
+    height:3px;
+    background-color: black;
+    position:absolute;
+    left:20rem;
+    top:0.7rem;
+}
+.arrow-1{
+    width:20px;
+    height:3px;
+    background-color:rgb(1, 0, 0);
+    position:absolute;
+    left:22rem;
+    top:0.36rem;
+    transform: rotate(30deg);
+
+}
+.arrow-2{
+    width:20px;
+    height:3px;
+    background-color:rgb(8, 8, 8);
+    position:absolute;
+    left:22rem;
+    top:1rem;
+    transform: rotate(-30deg);
+
+}
+
+ @media(max-width:1501px){
+    .navbar-name{
+     width: 100%
+    }
+    .navbar-name h1{
+        font-size:1.8rem
+    }
+   
+  
+    .branches{
+        width:90%
+    }
+    .btech-branches{
+        margin-left: 1rem;
+    }
+    .btech-name{
+        margin-left: -1rem;
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 155%;
+       
+       
+    }   
+    .nptel-page-content{
+        width:100%
+    }
+    
+  
+ 
+ }
+ @media(max-width:1401px){
+
+    .gist-logo-container{
+     width:5%
+    }
+    
+    .branches{
+        width:90%
+    }
+    .btech-branches{
+        margin-left: 1rem;
+    }
+    .btech-name{
+        margin-left: -1rem;
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 155%;
+       
+       
+    }   
+  
+ 
+}
+ @media(max-width:1351px){
+    
+   
+    .gist-logo-container{
+     width:5%
+    }
+   
+    .branches{
+        width:100%
+    }
+    .btech-branches{
+        margin-left: 1rem;
+    }
+    .btech-name{
+        margin-left: -1rem;
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 155%;
+       
+       
+    }   
+  
+ 
+ }
+ @media(max-width:1301px){
+    /* .navbar-name{
+     width: 100%
+    } */
+    .gist-logo-container{
+     width:5%
+}
+ }
+@media(max-width:1251px){
+   
+    .gist-logo-container{
+        width:5%
+    }
+   
+    .branches{
+        width:90%
+    }
+    .btech-branches{
+        margin-left: 1rem;
+    }
+    .btech-name{
+        margin-left: -1rem;
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 180%;
+       
+       
+    }   
+   
+   
+  
+ 
+ }
+@media(max-width:1201px){
+    .navbar-name{
+     width:88%
+    }
+    .gist-logo-container{
+        width:5%
+    }
+   
+    .branches{
+        width:90%
+    }
+    .btech-branches{
+        margin-left: 1rem;
+    }
+    .btech-name{
+        margin-left: 0rem;
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 200%;
+       
+       
+    }   
+  
+ 
+ }
+ @media(max-width:1151px){
+    /* .navbar-name{
+     width:88%
+    } */
+    .gist-logo-container{
+        width:5%
+    }
+    
+    .branches{
+        width:90%
+    }
+    .btech-branches{
+        margin-left: 1rem;
+    }
+    .btech-name{
+        margin-left: -1rem;
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 200%;
+       
+       
+    }   
+    .navbar-name h1{
+        font-size:2rem
+
+    }
+    
+  
+ 
+ }
+ @media(max-width:1001px){
+    .navbar-name h1{
+        font-size:1.7rem
+    }
+    .explore-courses{
+        left:-1rem
+        }   
+        .nptel-links-container{
+            margin-top:2rem
+        }
+        .logo-container-nav .tooltip-text-nav {
+       
+            left: 205%;
+           
+           
+        }  
+        .add-nav{
+            font-size:0.7rem
+        }
+
+ }
+
+
+ @media(max-width:951px){
+    .navbar-name h1 {
+        font-size:1.8rem
+
+    }
+    .add-nav{
+        font-size:0.7rem
+    }
+ }
+ @media(max-width:901px){
+    .navbar-name h1{
+        font-size:1.7rem
+    }
+    .add-nav{
+        font-size:0.6rem
+    }
+    .CSE-back,
+    .ECE-back,
+    .MECH-back,
+    .CIVIL-back,
+    .EEE-back,
+    .SH-back {
+       
+        width:140px;
+        
+    }
+    .dce-back,
+    .dme-back,
+    .deee-back,
+    .dcme-back,
+    .dece-back{
+       
+        width:140px;
+  
+    }
+   
+
+ }
+ @media(max-width:851px){
+
+    .navbar-name h1{
+        font-size:1.4rem
+    }
+    .add-nav{
+        font-size:0.6rem
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 225%;
+       
+       
+    }  
+    /* .navbar-name{
+        width:85%
+    } */
+   
+    .CSE-back,
+    .ECE-back,
+    .MECH-back,
+    .CIVIL-back,
+    .EEE-back,
+    .SH-back {
+       
+        width:130px;
+        
+    }
+    .dce-back,
+    .dme-back,
+    .deee-back,
+    .dcme-back,
+    .dece-back{
+       
+        width:130px;
+  
+    }
+ }
+ @media(max-width:801px){
+    .navbar-name h1{
+        font-size:1.5rem
+    }
+    .add-nav{
+        font-size:0.6rem
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 245%;
+       
+       
+    }  
+    .gist-logo-container{
+        width:7%
+    }
+    .logos{
+        width:5.3%
+    }
+    /* .navbar-name{
+        width:85%
+    } */
+   
+    .CSE-back,
+    .ECE-back,
+    .MECH-back,
+    .CIVIL-back,
+    .EEE-back,
+    .SH-back {
+       
+        width:120px;
+        
+    }
+    .dce-back,
+    .dme-back,
+    .deee-back,
+    .dcme-back,
+    .dece-back{
+       
+        width:120px;
+  
+    }
+   
+ }
+ @media(max-width:751px){
+    .navbar-name h1{
+        font-size:1.3rem
+    }
+    .add-nav{
+        font-size:0.5rem
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 265%;
+       
+       
+    }  
+    /* .navbar-name{
+        width:85%
+    } */
+   
+    .CSE-back,
+    .ECE-back,
+    .MECH-back,
+    .CIVIL-back,
+    .EEE-back,
+    .SH-back {
+       
+        width:110px;
+        
+    }
+    .dce-back,
+    .dme-back,
+    .deee-back,
+    .dcme-back,
+    .dece-back{
+       
+        width:110px;
+  
+    }
+    
+ }
+ @media(max-width:701px){
+    .navbar-name h1{
+        font-size:1.2rem
+    }
+    .add-nav{
+        font-size:0.54rem
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 285%;
+       
+       
+    }  
+    /* .navbar-name{
+        width:85%
+    } */
+   
+    .CSE-back,
+    .ECE-back,
+    .MECH-back,
+    .CIVIL-back,
+    .EEE-back,
+    .SH-back {
+       
+        width:100px;
+        
+    }
+    .dce-back,
+    .dme-back,
+    .deee-back,
+    .dcme-back,
+    .dece-back{
+       
+        width:100px;
+  
+    }
+   
+    
+ }
+ @media(max-width:651px){
+    .navbar-name h1{
+        font-size:1.1rem
+    }
+    .add-nav{
+        font-size:0.5rem
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 305%;
+       
+       
+    }  
+    /* .navbar-name{
+        width:85%
+    } */
+   
+    .CSE-back,
+    .ECE-back,
+    .MECH-back,
+    .CIVIL-back,
+    .EEE-back,
+    .SH-back {
+       
+        width:90px;
+        
+    }
+    .dce-back,
+    .dme-back,
+    .deee-back,
+    .dcme-back,
+    .dece-back{
+       
+        width:90px;
+  
+    }
+    
+    .swayam-link img{
+        width:90px
+        
+    }
+    .nptel-link img{
+        width:90px
+    }
+    .nptel-matter{
+        font-size:1rem
+    }
+    .gist-logo-container{
+        width:9%
+    }
+    .logos{
+        width:6.5%
+    }
+ }
+@media(max-width:601px){
+    .navbar-name h1{
+        font-size:1rem
+    }
+    .navbar-name{
+        gap:0.2rem
+    }
+    .add-nav{
+        font-size:0.4rem
+    }
+    .nav-img{
+        height:50px
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 265%;
+       
+       
+    }  
+    .navbar-name{
+ 
+        height:70px
+    }
+    .navbar{
+        height:70px
+    }
+    
+    .logos{
+        height:70px;
+
+    }
+    .CSE-back,
+    .ECE-back,
+    .MECH-back,
+    .CIVIL-back,
+    .EEE-back,
+    .SH-back {
+       
+        width:80px;
+        
+    }
+    .dce-back,
+    .dme-back,
+    .deee-back,
+    .dcme-back,
+    .dece-back{
+       
+        width:80px;
+  
+    }
+    .CSE-back .span,
+    .ECE-back .span,
+    .MECH-back .span,
+    .CIVIL-back .span,
+    .EEE-back .span,
+    .SH-back .span {
+       
+      font-size:1.3rem
+        
+    }
+    .dce-back .span,
+    .dme-back .span,
+    .deee-back .span,
+    .dcme-back .span,
+    .dece-back .span{
+       
+        font-size:1.3rem
+    }
+   
+    .swayam-link img{
+        width:90px
+        
+    }
+    .nptel-link img{
+        width:90px
+    }
+    /* .nptel-page-content{
+        width:75%
+    } */
+
+}
+@media(max-width:551px){
+    .navbar-name h1{
+        font-size:0.9rem;
+    }
+    .navbar-name{
+        gap:0.2rem;
+    }
+    .navbar-name h2{
+        font-size:0.8rem
+    }
+    .add-nav{
+        font-size:0.3rem
+    }
+    
+    .logo-container-nav .tooltip-text-nav {
+       visibility:visible;
+        left: 325%;
+        width: 60px;
+        background-color:transparent;
+        color: #1C2F75;
+        text-align: center;
+        border-radius: 10px;
+        padding: 5px 0px 5px 0px;
+        position: absolute;
+        z-index: 1;
+        bottom: -55%; /* Position the tooltip above the logo */
+        left: 140%;
+        margin-left: -50px;
+        opacity: 1;
+        transition: opacity 0.3s;
+        font-size: 0.45rem;
+        font-weight:800
+       
+       
+    }  
+    .sidebar-menu-nav{
+        margin-top:-10px
+    }
+   
+ 
+    /* .logo-container-nav:hover .tooltip-text-nav {
+        display:none
+        
+    } */
+    .navbar-name{
+        /* width:83%; */
+        height:60px
+    }
+    .navbar{
+        height:60px
+    }
+    .gist-logo-container{
+        width:10%
+    }
+    .logos{
+        height:60px;
+
+    }
+ .gist-logo-container img{
+    height:40px
+ }
+    
+    .nba-logo{
+        width:30px;
+        height:30px;
+       margin-left:5px
+    }
+
+    .naac-logo{
+        width:40px;
+        height:30px;
+        margin-right:0px;
+        margin-bottom:4.2px
+    }
+    .CSE-back,
+    .ECE-back,
+    .MECH-back,
+    .CIVIL-back,
+    .EEE-back,
+    .SH-back {
+       
+        width:110px;
+        
+    }
+    .dce-back,
+    .dme-back,
+    .deee-back,
+    .dcme-back,
+    .dece-back{
+       
+        width:110px;
+  
+    }
+     
+   
+    .swayam-link img{
+        width:60px;
+        height:40px
+        
+    }
+    .nptel-link img{
+        width:60px;
+        height:40px
+    }
+    .navbar-img{
+    
+        height:60px
+    }
+    .nptel-page-content h1{
+        font-size:1.3rem;
+    }
+    .nptel-page-content h1  img{
+        width:30px;
+        height:20px;
+        margin-top:0.3rem
+
+    }
+    .nptel-matter{
+        font-size:0.8rem
+    }
+    .btech-name{
+        font-size:1rem
+    }
+    .CSE-back,
+    .ECE-back,
+    .MECH-back,
+    .CIVIL-back,
+    .EEE-back,
+    .SH-back {
+       
+        width:60px;
+        
+    }
+    .dce-back,
+    .dme-back,
+    .deee-back,
+    .dcme-back,
+    .dece-back{
+       
+        width:60px;
+  
+    }
+    .CSE-back .span,
+    .ECE-back .span,
+    .MECH-back .span,
+    .CIVIL-back .span,
+    .EEE-back .span,
+    .SH-back .span {
+       
+      font-size:1rem
+        
+    }
+    .dce-back .span,
+    .dme-back .span,
+    .deee-back .span,
+    .dcme-back .span,
+    .dece-back .span{
+       
+        font-size:1rem
+    }
+   .eb{
+    margin-top:10px
+   }
+   .nptel-logo-nav,
+   .book-logo-nav,
+   .journal-logo-nav,
+   .logout-logo-nav,
+   .password-logo-nav,
+   .qp-logo-nav {
+       width: 30px;
+       height: 28px;
+       transition:0.2s ease-in-out
+   }
+
+   .qp-logo-nav{
+    margin-bottom:0.3rem
+   }
+  
+   p.qp{
+      
+       top:6px;
+       left:6.6px;
+       font-size:0.4rem
+    
+   }
+   .sidebar-menu-nav{
+    height:75vh
+   }
+   .nptel-page-content img{
+    margin-top:0.2rem
+}
+.nptel-page-content{
+    margin-left:-2rem;
+    margin-top:3.5rem
+}
+   
+    
+
+}
+@media(max-width:501px){
+    .navbar-name h1{
+        font-size:0.8rem;
+    }
+    .navbar-name{
+        gap:0.3rem;
+        /* width:75%; */
+        height:50px
+    }
+    
+    .navbar-name h2{
+        font-size:0.7rem
+    }
+    .add-nav{
+        font-size:0.25rem
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        visibility:visible;
+        left: 325%;
+        width: 60px;
+        background-color:transparent;
+        color: #eb7d28f0;
+        text-align: center;
+        border-radius: 10px;
+        padding: 5px 0px 5px 0px;
+        position: absolute;
+        z-index: 1;
+        bottom: -50%; /* Position the tooltip above the logo */
+        left: 140%;
+        margin-left: -50px;
+        opacity: 1;
+        transition: opacity 0.3s;
+        font-size: 0.45rem;
+        font-weight:800
+       
+       
+    }  
+    .nptel-logo-nav,
+    .book-logo-nav,
+    .journal-logo-nav,
+    .logout-logo-nav,
+    .password-logo-nav,
+    .qp-logo-nav {
+        width: 30px;
+        height: 30px;
+        transition:0.2s ease-in-out
+    }
+    p.qp{
+       
+        top:6px;
+        left:6.6px;
+        font-size:0.4rem
+     
+    }
+ 
+    /* .logo-container-nav:hover .tooltip-text-nav {
+        display:none
+        
+    } */
+    
+    .navbar{
+        height:50px
+    }
+    .gist-logo-container{
+        /* width:8%; */
+        height:50px
+    }
+    .gist-logo-container img{
+        height:35px
+    }
+    .estd{
+        font-size:0.4rem;
+        left:0.4rem
+    }
+    .logos{
+        height:50px;
+
+    }
+    .nba-logo{
+        width:25px;
+        height:25px;
+       margin-left:5px
+    }
+    .naac-logo{
+        width:35px;
+        height:25px;
+        margin-right:0px;
+        margin-bottom:11px
+    }
+    .CSE-back,
+    .ECE-back,
+    .MECH-back,
+    .CIVIL-back,
+    .EEE-back,
+    .SH-back {
+       
+        width:110px;
+        
+    }
+    .dce-back,
+    .dme-back,
+    .deee-back,
+    .dcme-back,
+    .dece-back{
+       
+        width:110px;
+  
+    }
+    
+    .swayam-link img{
+        width:60px;
+        height:40px
+        
+    }
+    .nptel-link img{
+        width:60px;
+        height:40px
+    }
+    .nptel-page-content h1{
+        font-size:1.4rem;
+    }
+    .nptel-page-content h1  img{
+        width:30px;
+        height:20px;
+            margin-top:0.4rem
+   
+
+    }
+   
+    .nptel-page-content{
+margin-left:-1.5rem;
+margin-top:3rem
+
+    }
+
+    .nptel-matter{
+        font-size:0.8rem
+    }
+    .btech-name{
+        font-size:1rem
+    }
+    .CSE-back,
+    .ECE-back,
+    .MECH-back,
+    .CIVIL-back,
+    .EEE-back,
+    .SH-back {
+       
+        width:55px;
+        
+    }
+    .dce-back,
+    .dme-back,
+    .deee-back,
+    .dcme-back,
+    .dece-back{
+       
+        width:55px;
+  
+    }
+    .CSE-back .span,
+    .ECE-back .span,
+    .MECH-back .span,
+    .CIVIL-back .span,
+    .EEE-back .span,
+    .SH-back .span {
+       
+      font-size:0.9rem
+        
+    }
+    .dce-back .span,
+    .dme-back .span,
+    .deee-back .span,
+    .dcme-back .span,
+    .dece-back .span{
+       
+        font-size:0.9rem
+    }
+    .eb{
+        width:50px;
+        height:50px;
+        margin-top: -4px;
+    }
+   
+
+}
+@media(max-width:451px){
+    .navbar-name h1{
+        font-size:0.7rem;
+    }
+    .navbar-name{
+        gap:0.5rem;
+        /* width:75%; */
+        height:50px
+    }
+    
+    .navbar-name h2{
+        font-size:0.6rem;
+    margin-bottom:0px
+    }
+    .add-nav{
+        font-size:0.3rem
+    }
+    .eb{
+        margin-top:0rem;
+       
+    }
+
+    .logo-container-nav .tooltip-text-nav {
+       
+        visibility:visible;
+        left: 325%;
+        width: 60px;
+        background-color:transparent;
+        color: #eb7d28f0;
+        text-align: center;
+        border-radius: 10px;
+        padding: 5px 0px 5px 0px;
+        position: absolute;
+        z-index: 1;
+        bottom: -50%; /* Position the tooltip above the logo */
+        left: 165%;
+        margin-left: -50px;
+        opacity: 1;
+        transition: opacity 0.3s;
+        font-size: 0.45rem;
+        font-weight:800
+       
+       
+    }  
+    .nptel-logo-nav,
+    .book-logo-nav,
+    .journal-logo-nav,
+    .logout-logo-nav,
+    .password-logo-nav,
+    .qp-logo-nav {
+        width: 30px;
+        height: 30px;
+        transition:0.2s ease-in-out
+    }
+    p.qp{
+       
+        top:6px;
+        left:6.6px;
+        font-size:0.4rem
+     
+    }
+ 
+    /* .logo-container-nav:hover .tooltip-text-nav {
+        display:none
+        
+    } */
+    
+    .navbar{
+        height:50px
+    }
+    .gist-logo-container{
+        /* width:8%; */
+        height:50px
+    }
+    .gist-logo-container img{
+        height:35px
+    }
+    .estd{
+        font-size:0.4rem;
+        left:0.4rem
+    }
+    .logos{
+        height:60px;
+        width:8%
+
+    }
+    .nba-logo{
+        width:23px;
+        height:22px;
+       margin-left:5px
+    }
+    .naac-logo{
+        width:32px;
+        height:25px;
+        margin-right:0px;
+        margin-bottom:11px
+    }
+    .CSE-back,
+    .ECE-back,  
+    .MECH-back,
+    .CIVIL-back,
+    .EEE-back,
+    .SH-back {
+       
+        width:55px;
+        
+    }
+    .dce-back,
+    .dme-back,
+    .deee-back,
+    .dcme-back,
+    .dece-back{
+       
+        width:55px;
+  
+    }
+    
+    .swayam-link img{
+        width:60px;
+        height:40px
+        
+    }
+    .nptel-link img{
+        width:60px;
+        height:40px
+    }
+   
+    .nptel-page-content h1{
+        font-size:1.3rem;
+    }
+    /* .nptel-page-content h1  img{
+        width:30px;
+        height:25px;
+        margin-top:0.1rem
+
+    } */
+    .nptel-page-content-img{
+        margin-top:0.3rem
+    }
+    .nptel-page-content{
+margin-left:-1.5rem;
+margin-top:3rem
+
+    }
+    .nptel-matter{
+        font-size: 0.65rem;
+    }
+    .explore-matter{
+        font-size:0.8rem
+
+    }
+        /* .nptel-page-content img{
+            margin-top:0.2rem
+        } */
+}
+@media(max-width:421px){
+    
+    .logo-container-nav .tooltip-text-nav {
+       
+        visibility:visible;
+        left: 325%;
+        width: 60px;
+        background-color:transparent;
+        color: #eb7d28f0;
+        text-align: center;
+        border-radius: 10px;
+        padding: 5px 0px 5px 0px;
+        position: absolute;
+        z-index: 1;
+        bottom: -50%; /* Position the tooltip above the logo */
+        left: 175%;
+        margin-left: -50px;
+        opacity: 1;
+        transition: opacity 0.3s;
+        font-size: 0.45rem;
+        font-weight:800
+       
+       
+    }  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+   /* @media(max-width:1400px){
+    .navbar-name h1,
+    .header-name-dashboard h1
+    {
+        font-size:2.4rem
+    }
+    .navbar-name{
+        width:100%
+    }
+    .nptel-page-content{
+        width:90%
+    }
+    .logo-container-nav .tooltip-text-nav ,
+    .logo-container .tooltip-text {
+       
+        left: 145%;
+       
+       
+    }
+    .logos{
+        width:15% 
+    }
+   }
+   @media(max-width:1350px){
+    .navbar-name h1
+{
+        font-size:2rem
+    }
+    .navbar-name
+ {
+        width:100%
+    }
+    .nptel-page-content{
+        width:95%
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 150%;
+       
+       
+    }
+    .branches{
+        width:85%    
+    }
+    .btech-name{
+            margin-left:7rem
+        }
+   .nptel-links-container{
+    width:110%
+   }  
+   .logos{
+    width:12% 
+}
+   }
+   @media(max-width:1250px){
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 155%;
+       
+       
+    }
+
+   }
+   @media(max-width:1201px){
+    .navbar-name h1{
+        font-size:2.1rem
+    }
+    .navbar-name{
+        width:100%
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 180%;
+       
+       
+    }
+    .nptel-page-content{
+        width:95%
+    }
+   }
+   @media(max-width:1176px){
+    .navbar-name h1{
+         font-size:2rem
+    }
+    .navbar-name{
+         width:100%
+    }
+    .add-nav{
+           font-size:0.8rem
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 185%;
+       
+       
+    }
+    .nptel-links-container{
+        width:130%
+    }
+    .logos{
+        width:5%
+    }
+   }
+   @media(max-width:1111px){
+    .nptel-page-content{
+        width:95%
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 195%;
+       
+       
+    }
+   }
+  
+    @media(max-width:1087px){
+        .navbar-name h1{
+             font-size:1.8rem
+        }
+        .navbar-name{
+             width:100%
+        }
+        .add-nav{
+               font-size:0.8rem
+        }
+        .logo-container-nav .tooltip-text-nav {
+       
+            left: 205%;
+           
+           
+        }
+        .nptel-links-container{
+            margin-top:3rem
+        }
+       }
+
+@media(max-width:1000px){
+    .navbar-name h1{
+        font-size:1.68rem
+    }
+    /* .navbar-name{
+        width:80%
+    } */
+    /* .logo-container-nav .tooltip-text-nav  {
+       
+        left: 225%;
+       
+       
+    }
+    .nptel-links-container{
+        width:140%
+    }
+    
+
+} */
+/* @media(max-width:950px){
+    .navbar-name h1{
+        font-size:1.59rem
+    }
+    /* .navbar-name{
+        width:79%
+    } */
+    /* .add-nav{
+        font-size:0.8rem
+
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 245%;
+       
+       
+    }
+    .nptel-links-container{
+        width:150%
+    } */
+
+/* } */ 
+/* @media(max-width:900px){
+    .navbar-name h1{
+        font-size:1.5rem
+    } */
+    /* .navbar-name{
+        width:79%
+    } */
+    /* .add-nav{
+        font-size:0.65rem
+
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 265%;
+       
+       
+    }
+    .nptel-links-container{
+        width:160%
+
+    }
+
+}
+@media(max-width:850px){
+    .navbar-name h1{
+        font-size:1.5rem
+    } */
+    /* .navbar-name{
+        width:79%
+    } */
+    /* .add-nav{
+        font-size:0.65rem
+
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 285%;
+       
+       
+    }
+    .nptel-links-container{
+        width:170%
+
+    }
+    .logos{
+        width:1%
+    }
+
+}
+@media(max-width:800px){
+    .navbar-name h1{
+        font-size:1.4rem
+    }
+    .navbar-name{
+        width:100%
+    }
+    .gist-logo-container{
+        width:10%
+    }
+    .add-nav{
+        font-size:0.49rem
+
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 180%;
+       
+       
+    }
+    .nptel-links-container{
+        width:160%
+
+    }
+    .nptel-page-content{
+        gap:2rem
+    }
+    .logos{
+      margin-right:-35px
+    }
+    .nptel-page-content{
+        width:105%
+    }
+
+}
+@media(max-width:770px){
+    .nptel-links-container{
+        width:175%
+    }
+    .logos{
+        margin-right:-4rem
+    }
+    .nptel-page-content{
+        width:105%
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 190%;
+       
+       
+    } */
+/* } */
+/* @media(max-width:750px){
+    .navbar-name h1{
+        font-size:1.2rem
+    } */
+    /* .navbar-name{
+        width:79%
+    } */
+    /* .add-nav{
+        font-size:0.6rem
+
+    }
+    .nptel-links-container{
+        width:155%
+
+    }
+    .nptel-page-content{
+        width:120%
+    }
+    .navbar-name h2{
+        font-size:1rem
+    }
+    .logos{
+        margin-right:-6rem
+    }
+    .CSE-back .span,
+.ECE-back .span,
+.CIVIL-back .span,
+.EEE-back .span,
+.SH-back .span{
+    font-size:1.5rem
+}
+.CSE-back,
+.ECE-back,
+.MECH-back,
+.CIVIL-back,
+.EEE-back,
+.SH-back {
+   
+    width:160px;
+    
+}
+
+.dce-back,
+.dme-back,
+.deee-back,
+.dcme-back,
+.dece-back{
+   
+    width:160px;
+  
+    
+   
+   
+}
+
+
+.dce-back .span,
+.dme-back .span,
+.deee-back .span,
+.dcme-back .span,
+.dece-back .span {
+    font-size: 1.5rem;
+   
+  
+    
+   
+}
+.logo-container-nav .tooltip-text-nav {
+       
+    left: 155%;
+   
+   
+} */
+/* .btech-branches{
+    margin-left: 1rem;
+} */
+
+/* }
+@media(max-width:700px){
+    .navbar-name h1{
+        font-size:1.15rem
+    } */
+    /* .navbar-name{
+        width:79%
+    } */
+    /* .add-nav{
+        font-size:0.5rem
+
+    }
+    .nptel-links-container{
+        width:200%
+
+    }
+    .navbar-name h2{
+        font-size:0.9rem
+    }
+    .CSE-back .span,
+.ECE-back .span,
+.CIVIL-back .span,
+.EEE-back .span,
+.SH-back .span{
+    font-size:1.45rem
+}
+.CSE-back,
+.ECE-back,
+.MECH-back,
+.CIVIL-back,
+.EEE-back,
+.SH-back {
+   
+    width:155px;
+    
+}
+
+.dce-back,
+.dme-back,
+.deee-back,
+.dcme-back,
+.dece-back{
+   
+    width:155px; */
+  
+    
+/*    
+   
+}
+
+
+.dce-back .span,
+.dme-back .span,
+.deee-back .span,
+.dcme-back .span,
+.dece-back .span {
+    font-size: 1.45rem;
+   
+  
+    
+   
+}
+.logo-container-nav .tooltip-text-nav {
+       
+    left: 345%;
+   
+   
+}
+
+}
+@media(max-width:650px){
+    .navbar-name h1{
+        font-size:1rem
+    } */
+    /* .navbar-name{
+        width:79%
+    } */
+    /* .add-nav{
+        font-size:0.48rem;
+        font-weight:750
+
+    }
+    .nptel-links-container{
+        width:210%
+
+    }
+    .navbar-name h2{
+        font-size:0.9rem
+    }
+    .CSE-back .span,
+.ECE-back .span,
+.CIVIL-back .span,
+.EEE-back .span,
+.SH-back .span{
+    font-size:1.45rem
+}
+.CSE-back,
+.ECE-back,
+.MECH-back,
+.CIVIL-back,
+.EEE-back,
+.SH-back {
+   
+    width:155px;
+    
+}
+
+.dce-back,
+.dme-back,
+.deee-back,
+.dcme-back,
+.dece-back{
+   
+    width:155px;
+  
+    
+   
+   
+}
+
+
+.dce-back .span,
+.dme-back .span,
+.deee-back .span,
+.dcme-back .span,
+.dece-back .span {
+    font-size: 1.45rem;
+   
+  
+    
+   
+}
+.navbar-name{
+    gap:0.5rem
+}
+.logo-container-nav .tooltip-text-nav {
+       
+    left: 355%;
+   
+   
+}
+
+}
+@media(max-width:623px){
+    .nptel-page-content{
+        gap:3.5rem
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 370%;
+       
+       
+    }
+    .nptel-links-container{
+        width:220%
+
+    } */
+
+
+/* }
+@media(max-width:600px){
+     
+    
+    .CSE-back .span,
+    .ECE-back .span,
+    .CIVIL-back .span,
+    .EEE-back .span,
+    .SH-back .span{
+        font-size:1.45rem
+    }
+    .CSE-back,
+    .ECE-back,
+    .MECH-back,
+    .CIVIL-back,
+    .EEE-back,
+    .SH-back {
+       
+        width:145px;
+        
+    }
+    
+    .dce-back,
+    .dme-back,
+    .deee-back,
+    .dcme-back,
+    .dece-back{
+       
+        width:145px;
+      
+        
+       
+       
+    }
+    .nptel-links-container{
+        width:230%
+
+    }
+    
+    
+    .dce-back .span,
+    .dme-back .span,
+    .deee-back .span,
+    .dcme-back .span,
+    .dece-back .span {
+        font-size: 1.45rem;
+       
+      
+        
+       
+    }
+    .navbar-name{
+        gap:0.6rem
+    }
+    .logo-container-nav .tooltip-text-nav {
+       
+        left: 385%;
+       
+       
+    }
+
+
+} */ 

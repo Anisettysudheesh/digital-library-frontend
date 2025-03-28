@@ -1,0 +1,771 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    background-color: white;
+    margin:0;
+    padding:0
+}
+/* .header-login img{
+    width: 82px;
+height: 82px;
+flex-shrink: 0;
+aspect-ratio: 1/1;
+} */
+ /* .navbar{
+    margin-top: -10px;
+ } */
+/* .header-login{
+    display:flex;
+    border-bottom: black 1px solid;
+}
+.header-name-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;  
+    background-color: #eb7d28f0;
+    width:100%;
+    
+    margin-right: 0px;
+    gap:0px;
+    border-bottom-left-radius: 20px;
+
+}
+.header-name-login h1 {
+  
+    margin:0px;
+  
+    color: #f8f8f8;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Poppins;
+font-size:2rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding:0px;
+margin-bottom: 0px;
+
+
+
+
+   
+}
+.header-name-login h2{
+    margin:0px;
+    color: 00000;
+    padding:0px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    font-family:Poppins;
+    font-size:1.2rem;
+ */
+ .navbar-login{
+    grid-area: navbar;
+    display: flex;
+    
+  
+    border-bottom: 1px solid black;
+    height:79px;
+    position:fixed;
+    width: 100%;
+    
+    
+}
+.login-img{
+    width: 100%;
+    height: 60px;
+    
+   
+    
+}
+.navbar-name-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eb7d28f0;
+    margin-right: 0px;
+    border-bottom-left-radius: 20px;
+    height:79px;
+    width:100%;
+    
+    
+   
+
+}
+
+.gist-logo-container-login{
+    display: flex;
+    flex-direction:column;
+   
+    width:5%
+
+}
+.estd-login{
+    display:flex;
+    justify-content: center;
+   
+    font-size:0.5rem;
+   
+    font-weight:bold;
+    
+
+}
+.navbar-name-login h1{
+    margin: 0px;
+    color: #f8f8f8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: -8px;
+}
+.navbar-name-login h2{
+    margin: 0px;
+    color: #000000;
+    padding: 0px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+.add-login{
+    margin: 0px;
+    font-size: 0.8rem;
+    margin-top: -10px;
+   
+}
+.nba-logo-login{
+    width:40px;
+    height:40px;
+   margin-left:5px
+
+}
+.naac-logo-login{
+    width:50px;
+    height:40px;
+    margin-right:0px;
+    margin-bottom:4.2px
+
+}
+.logos-login{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    padding:0.2rem;
+    height: 79px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    width:3.5%
+
+  
+   
+}
+
+ .login-main-content{
+    /* margin-top:5rem */
+ }
+/* } */
+ h5 {
+   
+    margin:0px;
+    color: rgba(205, 11, 31, 0.789);
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Poppins;
+font-size:  1.8rem;
+font-style: normal;
+font-weight: 620;
+margin-top: 10px;
+initial-letter: 2px;
+
+
+/* position:absolute;
+top:2rem */
+
+text-align: center;
+
+}
+.add-login{
+    margin:0px;
+    font-size: 0.8rem;
+    margin-top: -10px;
+
+}
+.digilib{
+border-radius: 15px;
+background: #2C77B1;
+color:white;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+padding:0.5rem;
+display:block;
+margin-left: 50%;
+transform:translateX(-50%);
+margin-top: 1rem;
+text-align: center;
+width:fit-content;
+letter-spacing: 1px;
+
+}
+.userlogo{
+    width:25px;
+    height:25px;
+    position:absolute;
+    left:4px;
+    top:5px
+}
+.userback{
+    width: 160px;
+height: 35px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #EB7D28;
+margin-bottom: 1rem;
+position:relative;
+}
+form h3 {
+    width: 160px;
+flex-shrink: 0;
+
+color: #FFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Poppins;
+font-size: 23px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: 10px;
+}
+form{
+ margin-top: 3rem;
+    width: 400px;
+    height:395px;
+border-radius: 20px;
+border: 1px solid #000;
+
+background: #FFF;
+position:relative;
+box-shadow :4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+transition:0.2s ease-in-out;
+}
+form:hover{
+    transform:scale(1.1);
+  
+}
+form label{
+display:flex;
+justify-content:start;
+align-items: center;
+font-family: Poppins;
+font-size: 15px;
+margin-left: 2rem;
+gap:3rem;
+}
+.username{
+    color: #000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position:absolute;
+    top: 9rem;
+    left:3rem;
+    background-color: white;
+    height:-5px;
+
+    
+
+}
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #000;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.password{
+    color: #000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 1.5rem;
+position:absolute;
+top: 12rem;
+left:3rem;
+background-color: white;
+z-index:1;
+height:-5px
+
+}
+.input1
+ {
+    display: inline-flex;
+padding: 10px 45px 13px 18px;
+align-items: center;
+border-radius: 10px;
+border: 1px solid #000;
+margin-left:0px;
+width:15rem;
+margin-right:10px;
+margin-top:1.5rem;
+font-size:1.2rem;
+background-color:white;
+line-height: 1;
+}
+.input2
+ {
+    display: inline-flex;
+padding: 10px 45px 13px 18px;
+align-items: center;
+border-radius: 10px;
+border: 1px solid #000;
+width:15rem;
+margin-top: 1.5rem;
+margin-right:10px;
+font-size:1.2rem;
+background-color:white;
+line-height: 1;
+
+
+}
+.input1::placeholder,
+.input2::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Placeholder text color */
+    font-family: Poppins;
+    
+    font-size: clamp(0.875rem, 1vw + 0.1rem, 1.25rem);
+    font-weight: 200;
+    line-height: 1.5;
+    margin-top: 1rem;
+    line-height: 1.5;
+    /* Responsive font size for placeholder */
+}
+.colon1{
+    position: absolute;
+    left: 12rem;
+    
+}
+.colon2{
+    position:absolute;
+    left:12rem
+
+}
+.submit{
+    border-radius: 10px;
+border: 1px solid #463333;
+font-size: 1.2rem;
+margin-top:1rem;
+background: #EB7D28;
+display:block;
+color:white;
+padding:2px 5px 2px 5px;
+font-family: Poppins;
+margin-bottom:10px;
+transition:0.2s ease-in-out;
+font-weight:500
+}
+.submit:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.dl-logo{
+    width:80px;
+    height:80px;
+    position:absolute;
+    margin-left: 50%;
+    transform:translateX(-210%) ;
+    z-index: -1;
+}
+.change-pass{
+
+    margin-top: 0px;
+    font-size: 0.8rem;
+    margin-left: -15px;
+    margin-bottom:0px;
+    color:rgb(65, 71, 185)
+}
+@media (max-width: 1200px) {
+    .navbar-name-login h1 {
+        font-size: 2rem;
+    }
+   
+    .digilib {
+        font-size: 1.25rem;
+    }
+    form h3 {
+        font-size: 1.5rem;
+    }
+    form label {
+        font-size: 1rem;
+    }
+    .username, .password {
+        font-size: 1.25rem;
+    }
+    .input1::placeholder,
+    .input2::placeholder {
+        font-size: 1rem;
+    }
+    .submit {
+        font-size: 1rem;
+    }
+}
+@media(max-width:1151px){
+    .navbar-name-login h1{
+        font-size:2rem
+
+    }
+}
+@media(max-width:1001px){
+    .navbar-name-login h1{
+        font-size:1.7rem
+    }
+     .add-login{
+        font-size:0.7rem
+    }
+
+}
+
+@media (max-width: 951px) {
+    .navbar-name-login h1 {
+        font-size: 1.8rem;
+    }
+    .add-login{
+        font-size:0.7rem
+    }
+  
+    .digilib {
+        font-size: 1rem;
+    }
+    form h3 {
+        font-size: 1.25rem;
+    }
+    form label {
+        font-size: 0.875rem;
+    }
+    .username, .password {
+        font-size: 1rem;
+    }
+    .input1::placeholder,
+    .input2::placeholder {
+        font-size: 0.875rem;
+    }
+    .submit {
+        font-size: 0.875rem;
+    }
+}
+@media(max-width:901px){
+    .navbar-name-login h1{
+        font-size:1.7rem
+    }
+    .add-login{
+        font-size:0.6rem
+    }
+}
+@media(max-width:851px){
+    .navbar-name-login h1{
+        font-size:1.4rem
+    }
+    .add-login{
+        font-size:0.6rem
+    }
+}
+@media(max-width:801px){
+    .navbar-name-login h1{
+        font-size:1.5rem
+    }
+    .add-login{
+        font-size:0.6rem
+    }
+}
+@media (max-width: 751px) {
+    .navbar-name-login h1 {
+        font-size: 1.3rem;
+    }
+    .add-login{
+        font-size:0.5rem
+    }
+    .digilib {
+        font-size: 1rem;
+    }
+    form h3 {
+        font-size: 1.4rem;
+    }
+    form label {
+        font-size: 0.75rem;
+    }
+    .username, .password {
+        font-size: 0.875rem;
+    }
+    .input1::placeholder,
+    .input2::placeholder {
+        font-size: 0.75rem;
+    }
+    .submit {
+        font-size: 1rem;
+    }
+}
+@media(max-width:701px){
+    .navbar-name-login h1{
+        font-size:1.2rem
+    }
+    .add-login{
+        font-size:0.54rem
+    }
+}
+@media(max-width:651px){
+    .navbar-name-login h1{
+        font-size:1.1rem
+    }
+    .add-login{
+        font-size:0.5rem
+    }
+    .gist-logo-container-login{
+        width:9%
+    }
+    .logos-login{
+        width:6.5%
+    }
+}
+@media(max-width:601px){
+    .navbar-name-login h1{
+        font-size:1rem
+    }
+    .add-login{
+        font-size:0.4rem
+    }
+    .navbar-name-login{
+        gap:0.2rem;
+        height:70px
+
+    }
+    .navbar-login{
+        height:70px
+    }
+    .login-img{
+        height:50px
+    }
+    .logos-login{
+        height:70px;
+
+    }
+    form{
+        margin-top:10px
+
+    }
+
+}
+
+@media(max-width:551px){
+    .navbar-name-login h1{
+        font-size:0.9rem
+    }
+    .add-login{
+        font-size:0.3rem
+    }
+    .navbar-name-login{
+        gap:0.2rem;
+        height:60px
+    }
+    .navbar-name-login h2{
+        font-size:0.8rem
+
+    }
+    .navbar-login{
+        height:60px
+    }
+    .gist-logo-container{
+        width:10%
+    }
+    .logos-login{
+        height:60px;
+
+    }
+ .gist-logo-container-login img{
+    height:40px
+ }
+    
+    .nba-logo-login{
+        width:30px;
+        height:30px;
+       margin-left:5px
+    }
+    .dl-logo{
+        width:60px;
+        height:60px;
+        margin-top: 0.2rem;
+    }
+
+    .naac-logo-login{
+        width:40px;
+        height:30px;
+        margin-right:0px;
+        margin-bottom:4.2px
+    }
+    .digilib {
+        font-size: 0.75rem;
+    }
+    form h3 {
+        font-size: 1.1rem;
+        margin-left:0;
+        padding-top:5px
+        
+       
+    }
+    h5{
+        font-size:1.5rem
+    }
+    .userlogo{
+        top:5px;
+        left:6px
+    }
+    form label {
+        font-size: 0.625rem;
+    }
+    .userback{
+        width:130px
+    }
+    .username, .password {
+        font-size: 0.75rem;
+    }
+    .input1::placeholder,
+    .input2::placeholder {
+        font-size: 0.625rem;
+    }
+    .submit {
+        font-size: 1rem;
+        padding:0.5rem 0.2rem 0.5rem 0.2rem
+    }
+
+}
+
+@media(max-width:501px){
+    .navbar-name-login h1{
+        font-size:0.8rem
+
+    }
+    .add-login{
+        font-size:0.25rem
+    }
+    .navbar-name-login{
+        height:50px;
+        gap:0.3rem
+    }
+    .navbar-name-login h2{
+        font-size:0.7rem
+    }
+    .navbar-login{
+        height:50px
+    }
+    .gist-logo-container-login{
+        /* width:8%; */
+        height:50px
+    }
+    .gist-logo-container-login img{
+        height:35px
+    }
+    .estd-login{
+        font-size:0.4rem;
+        left:0.4rem
+    }
+    .logos-login{
+        height:50px;
+
+    }
+    .nba-logo-login{
+        width:25px;
+        height:25px;
+       margin-left:5px
+    }
+    .naac-logo-login{
+        width:35px;
+        height:25px;
+        margin-right:0px;
+        margin-bottom:11px
+    }
+    h5{
+        font-size:1.5rem
+    }
+    form{
+        margin-top:10px
+
+    }
+
+}
+@media(max-width:451px){
+    .navbar-name-login h1{
+        font-size:0.7rem;
+    }
+    .navbar-name-login{
+        gap:0.5rem;
+        /* width:75%; */
+        height:50px
+    }
+    
+    .navbar-name-login h2{
+        font-size:0.6rem;
+    margin-bottom:0px
+    }
+    .login-nav{
+        font-size:0.3rem
+    }
+    .navbar-login{
+        height:50px
+    }
+    h5{
+        font-size:1.3rem
+    }
+    .gist-logo-container-login{
+        /* width:8%; */
+        height:50px
+    }
+    .gist-logo-container-login img{
+        height:35px
+    }
+    .estd-login{
+        font-size:0.4rem;
+        left:0.4rem
+    }
+    .logos-login{
+        height:60px;
+        width:8%
+
+    }
+    .nba-logo-login{
+        width:23px;
+        height:22px;
+       margin-left:5px
+    }
+    .naac-logo-login{
+        width:32px;
+        height:25px;
+        margin-right:0px;
+        margin-bottom:11px
+    }
+
+}
