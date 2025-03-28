@@ -273,9 +273,9 @@ body::before {
 }
 .nptel-matter{
     font-size:1.1rem;
-    text-align:center;
+    text-align:justify;
     margin:0 1rem 0 1rem;
-    font-weight:600
+    font-weight:600;
 
 }
 
