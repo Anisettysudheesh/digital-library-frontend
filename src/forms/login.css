@@ -715,6 +715,11 @@ font-weight:500
         margin-top:10px
 
     }
+    P{
+        font-size:0.8rem;
+        text-align: justify;
+        width:80%
+    }
 
 }
 @media(max-width:451px){
@@ -725,6 +730,17 @@ font-weight:500
         gap:0.5rem;
         /* width:75%; */
         height:50px
+    }
+    .digilib{
+        width:200px;
+        font-size:1rem;
+    }
+    .dl-logo{
+        margin-left:40%
+    }
+    form{
+        border:none;
+        box-shadow: none;
     }
     
     .navbar-name-login h2{
@@ -755,6 +771,12 @@ font-weight:500
         height:60px;
         width:8%
 
+    }
+    .username{
+        top:8.1rem
+    }
+    .password{
+        top: 11rem
     }
     .nba-logo-login{
         width:23px;
