@@ -773,10 +773,10 @@ font-weight:500
 
     }
     .username{
-        top:8.1rem
+        top:7.2rem
     }
     .password{
-        top: 11rem
+        top: 10.2rem
     }
     .nba-logo-login{
         width:23px;
@@ -788,6 +788,15 @@ font-weight:500
         height:25px;
         margin-right:0px;
         margin-bottom:11px
+    }
+    form input::placeholder{
+        font-size:0.5rem
+    }
+    .input1::placeholder,
+    .input2::placeholder {
+        font-size: 0.9rem;
+        color:black;
+        font-weight: 200;
     }
 
 }

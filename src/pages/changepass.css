@@ -362,13 +362,23 @@ font-size:1.2rem
 
     }
     .oldpass{
-        top:8.7rem
+        top:8.5rem;
+    
 
     }
     .newpass{
-        top:13.5rem
+        top:13.2rem
     }
     .confirmpass{
-        top:18.3rem
+        top:18rem
+    }
+    .oldpass,
+    .confirmpass,
+    .newpass{
+        font-size: 0.8rem;
+        font-weight:500
+    }
+    .changepass-form input::placeholder{
+        font-size:0.8rem
     }
 }
