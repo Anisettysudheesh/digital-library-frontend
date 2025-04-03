@@ -1,11 +1,11 @@
-import React from 'react';
+import React,{useEffect,useContext} from 'react';
 import logo from "../logos/gist.jpeg";
 import nptellogo from "../logos/nptellogo.png";
 import book from "../logos/e-books.png";
 import journal from "../logos/jounals.png";
 import logoutlogo from "../logos/logout.png";
 import passwordlogo from "../logos/password.png";
-import {Link} from "react-router-dom"
+import {Link,useNavigate} from "react-router-dom"
 import "./nptel.css";
 import nptelpagelogo from "../logos/nptel-page-logo.png"
 import qplogo from "../logos/qplogo.png"
@@ -13,9 +13,26 @@ import nbalogo from "../logos/nbalogo.png"
 import naaclogo from "../logos/naaclogo.png"
 import nptellinklogo from "../logos/nptel-link-logo.png"
 import swayamlinklogo from "../logos/swaym-link-logo.png"
+import {store} from "../App"
+import {jwtDecode} from "jwt-decode"
 
 
 function Nptel() {
+    const[token]=useContext(store)
+    const storedToken = localStorage.getItem('token');
+    const navigate = useNavigate();
+   
+
+
+    useEffect(()=>{
+        if (!token || !storedToken) {
+            alert("please login again")
+            navigate('/');
+        }
+
+
+},[storedToken,navigate,token]);
+
     return (
         <div className="nptel-main">
             

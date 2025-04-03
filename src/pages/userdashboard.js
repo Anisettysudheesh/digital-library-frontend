@@ -25,9 +25,9 @@ function UserDashboard() {
 
 
     useEffect(()=>{
-        if (!token) {
+        if (!token || !storedToken) {
             alert("please login again")
-            navigate('/ ');
+            navigate('/');
         }
     const fetchData = async () => {
         try {
@@ -39,6 +39,12 @@ function UserDashboard() {
             console.log(response);
         } catch (error) {
             console.log(error);
+            if (error.response && error.response.status === 401) {
+                alert("please login again")
+                navigate('/');
+            } else {
+                console.error("Error fetching data:", error);
+            }
         }
     };
 

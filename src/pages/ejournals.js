@@ -1,17 +1,48 @@
-import React from 'react';
-import logo from "../logos/gist.jpeg";
-import nptellogo from "../logos/nptellogo.png";
-import book from "../logos/e-books.png";
-import journal from "../logos/jounals.png";
-import logoutlogo from "../logos/logout.png";
-import passwordlogo from "../logos/password.png";
-import {Link} from "react-router-dom"
-import "./nptel.css"; 
+import React,{useEffect,useContext} from 'react'
+import logo from "../logos/gist.jpeg"
+import nptellogo from "../logos/nptellogo.png"
+import book from "../logos/e-books.png"
+import journal from "../logos/jounals.png"
+import logoutlogo from "../logos/logout.png"
+import passwordlogo from "../logos/password.png"
+import {Link,useNavigate} from "react-router-dom"
+import "./nptel.css"
 import ejournalpagelogo from "../logos/journal-page-logo.png"
 import qplogo from "../logos/qplogo.png"
 import nbalogo from "../logos/nbalogo.png"
 import naaclogo from "../logos/naaclogo.png"
+import {store} from "../App"
+import {jwtDecode} from "jwt-decode"
 function Ejournals() {
+    const[token]=useContext(store)
+    const storedToken = localStorage.getItem('token');
+    const navigate = useNavigate();
+   
+
+
+    useEffect(() => {
+        if (!token || !storedToken) {
+            alert("Please login again");
+            navigate('/');
+        } else {
+            try {
+                const decodedToken = jwtDecode(storedToken);
+                const currentTime = Date.now() / 1000;
+    
+                if (decodedToken.exp < currentTime) {
+                    alert("Session expired. Please login again.");
+                    localStorage.removeItem('token');
+                    navigate('/');
+                }
+            } catch (error) {
+                console.error("Invalid token:", error);
+                alert("Invalid token. Please login again.");
+                localStorage.removeItem('token');
+                navigate('/');
+            }
+        }
+    }, [storedToken, navigate, token]);
+
     return (
         <div className="nptel-main">
             

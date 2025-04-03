@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect ,useContext } from 'react';
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 
 
@@ -16,23 +16,40 @@ import Quepapers from './pages/quepapers';
 export const store = createContext();
 
 function App() {
+  const tokenState = useToken();
   return (
-    <store.Provider value={useToken()}>
+    <store.Provider value={tokenState}>
       <BrowserRouter>
         <MainContent />
       </BrowserRouter>
     </store.Provider>
   );
 }
-
 function useToken() {
-  const [token, setToken] = useState(localStorage.getItem('token'));
+  const [token, setToken] = useState(() => {
+    const storedToken = localStorage.getItem('token');
+    if (storedToken) {
+      try {
+        const decodedToken = jwtDecode(storedToken);
+        const currentTime = Date.now() / 1000;
+        if (decodedToken.exp < currentTime) {
+          localStorage.removeItem('token');
+          return null;
+        }
+        return storedToken;
+      } catch (error) {
+        console.error("Invalid token during initialization:", error);
+        localStorage.removeItem('token');
+        return null;
+      }
+    }
+    return null;
+  });
 
   useEffect(() => {
     if (token) {
       localStorage.setItem('token', token);
-    }
-     else {
+    } else {
       localStorage.removeItem('token');
     }
   }, [token]);
@@ -43,22 +60,28 @@ function useToken() {
 function MainContent() {
   const navigate = useNavigate();
   
-  const [token, setToken] = useToken();
+  const [token, setToken] = useContext(store);
 
   useEffect(() => {
     if (token) {
-      const decodedToken = jwtDecode(token);
-      const currentTime = Date.now() / 1000;
-
-      if (decodedToken.exp < currentTime) {
-        // Token is expired
+      try {
+        const decodedToken = jwtDecode(token);
+        const currentTime = Date.now() / 1000;
+  
+        if (decodedToken.exp < currentTime) {
+          // Token is expired
+          setToken(null);
+          localStorage.removeItem('token');
+          navigate('/');
+        }
+      } catch (error) {
+        console.error("Invalid token:", error);
         setToken(null);
         localStorage.removeItem('token');
         navigate('/');
       }
     }
-    
-  }, [token, navigate, setToken])
+  }, [token, navigate]);
 
 
   return (

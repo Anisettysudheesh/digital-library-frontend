@@ -49,7 +49,7 @@ function UserLogin() {
             const decodedToken = jwtDecode(receivedToken)
             localStorage.setItem('token', receivedToken);
           
-            if(token){
+            if(receivedToken){
                 navigate("/UserDashboard");
 
             }
