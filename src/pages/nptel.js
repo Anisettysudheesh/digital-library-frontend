@@ -112,22 +112,22 @@ and Roorkee).
                         </div>
                          <div className="branches">
                                         <div className="SH-back">
-                                                <div className="span">SH</div>
+                                              <a style={{ textDecoration:"none"}} href="https://docs.google.com/document/d/1_LEayuzBZCFlwvAV0eF0L_2hsM7LmnSA/edit"><div className="span">SH</div></a>  
                                     </div> 
                                  <div className="CSE-back">
-                                                <div className="span" >CSE</div>
+                                                  <a style={{ textDecoration:"none"}} href="https://docs.google.com/document/d/172W8OD1isE2y5FvnqEFdB2vnR8V1vuUw/edit"> <div className="span" >CSE</div></a>  
                                      </div>
                                 <div className="ECE-back">
-                                                    <div className="span" >ECE</div>
+                                                 <a style={{ textDecoration:"none"}} href="https://docs.google.com/document/d/1hH69tCNFEum0MLEJD0D3lUPGrDyE374-/edit"> <div className="span" >ECE</div></a>  
                                 </div>
                                     <div className="EEE-back">
-                                            <div className="span">EEE</div>
+                                                     <a style={{ textDecoration:"none"}} href="https://docs.google.com/document/d/1zQ7Bsy5Brqx3bwZMuuX8E3QCiBb8KXio/edit"><div className="span">EEE</div></a>  
                                     </div>
                                     <div className="CIVIL-back">
-                                            <div className="span" > CIVIL</div>
+                                                <a style={{ textDecoration:"none"}}  href="https://docs.google.com/document/d/1A9U3EjpsY_jDLPR0PRG1zbPYeSEw7zTo/edit "><div className="span" > CIVIL</div></a>  
                                     </div>
                                     <div className="SH-back">
-                                                <div className="span">MECH</div>
+                                                <a style={{ textDecoration:"none"}} href="https://docs.google.com/document/d/16oQAqxQruVkb-sxI90tW3VA4zJZXmZeQ/edit?rtpof=true"><div className="span">MECH</div></a>   
                                     </div> 
                                    
                      </div>   
