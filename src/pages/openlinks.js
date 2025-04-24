@@ -89,15 +89,16 @@ function OpenLinks() {
                                         <Link to="/E-books"><img src={book} alt="Books" className="book-logo-nav" /></Link> 
                                             <span className="tooltip-text-nav">e-Books</span>
                                         </div>
-                                        <div className="logo-container-nav">
-                                        <Link to="/E-journals"><img src={journal} alt="Journals" className="journal-logo-nav" /></Link>  
-                                            <span className="tooltip-text-nav">e-Journals</span>
-                                        </div>
+                                        
                                          <div className="logo-container-nav">
                                          <p className="qp">Q&P</p>
                                               <Link to="/quepapers"><img src={qplogo} alt="Logout" className="qp-logo-nav" /></Link>  
                                                  <span className="tooltip-text-nav">Question Papers</span>
                                          </div>
+                                         <div className="logo-container-nav">
+                                        <Link to="/E-journals"><img src={journal} alt="Journals" className="journal-logo-nav" /></Link>  
+                                            <span className="tooltip-text-nav">e-Journals</span>
+                                        </div>
                                          <div className="logo-container-nav">
                                         <Link to="/E-journals"><img src={linkslogo} alt="Journals" className="journal-logo-nav" /></Link>  
                                             <span className="tooltip-text-nav">other links</span>

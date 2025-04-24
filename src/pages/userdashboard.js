@@ -88,16 +88,17 @@ function UserDashboard() {
                           <Link to="/E-books"><img src={book} alt="Books" className="book-logo" /></Link>  
                             <span className="tooltip-text">e-Books</span>
                         </div>
-                        <div className="logo-container">
-                          <Link to="/E-journals"><img src={journal} alt="Journals" className="journal-logo" /></Link>  
-                            <span className="tooltip-text">e-Journals</span>
-                        </div>
+                       
                         <div className="logo-container">
                                    <p className="qp">Q&P</p>
                          <Link to="/quepapers"><img src={qplogo} alt="Logout" className="qp-logo" /></Link>  
                                                                  
                              <span className="tooltip-text">Question Papers</span>
                                     </div>
+                                    <div className="logo-container">
+                          <Link to="/E-journals"><img src={journal} alt="Journals" className="journal-logo" /></Link>  
+                            <span className="tooltip-text">e-Journals</span>
+                        </div>
                             <div className="logo-container">
                               <Link to="/links"><img src={linkslogo} alt="Journals" className="journal-logo-nav" /></Link>  
                                            <span className="tooltip-text">other links</span>
