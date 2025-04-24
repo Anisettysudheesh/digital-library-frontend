@@ -12,6 +12,7 @@ import { store } from "../App";
 import qplogo from "../logos/qplogo.png";
 import nbalogo from "../logos/nbalogo.png"
 import naaclogo from "../logos/naaclogo.png"
+import linkslogo from "../logos/other links.png"
 
 function Changepass() {
     const [oldpass, setOldpass] = useState("");
@@ -95,6 +96,10 @@ function Changepass() {
                             </Link>
                             <span className="tooltip-text-nav">Question Papers</span>
                         </div>
+                          <div className="logo-container-nav">
+                                                                <Link to="/links"><img src={linkslogo} alt="Journals" className="journal-logo-nav" /></Link>  
+                                                                    <span className="tooltip-text-nav">other links</span>
+                                                                </div>
                     </div>
                     <div className="menu-2-nav">
                         <div className="logo-container-nav">

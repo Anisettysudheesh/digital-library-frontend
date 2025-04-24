@@ -17,7 +17,17 @@ import delnetlogo from "../logos/delnet-logo.png"
 import nlistlogo from "../logos/nlist-logo.jpeg"
 import knimbuslogo from "../logos/knimbus-logo.png"
 import linkslogo from "../logos/other links.png"
-function Ejournals() {
+import ndli from "../logos/ndli.jpg"
+import bookboon from "../logos/bookboon.jpg"
+import pdfdrive from "../logos/pdfdrive.png"
+import faadooengineers from "../logos/faadooengineers.jpg"
+import coursera from "../logos/coursera.png"
+import obooko from "../logos/obooko.png"
+import niscir from "../logos/niscir.jpg"
+import scientificresearch from "../logos/scientificresearch.png"
+import springeropen from "../logos/springeropen.png"
+import oajse from "../logos/oajse.jpg"
+function OpenLinks() {
     const[token]=useContext(store)
     const storedToken = localStorage.getItem('token');
     const navigate = useNavigate();
@@ -89,7 +99,7 @@ function Ejournals() {
                                                  <span className="tooltip-text-nav">Question Papers</span>
                                          </div>
                                          <div className="logo-container-nav">
-                                        <Link to="/links"><img src={linkslogo} alt="Journals" className="journal-logo-nav" /></Link>  
+                                        <Link to="/E-journals"><img src={linkslogo} alt="Journals" className="journal-logo-nav" /></Link>  
                                             <span className="tooltip-text-nav">other links</span>
                                         </div>
                                     </div>
@@ -109,83 +119,54 @@ function Ejournals() {
                        
                 
             <div className="nptel-page-content">
-            <h1><img src ={ejournalpagelogo} width="70px" height="60px"  ></img>e-Journals</h1>
-            {/* <div className="btech-branches"> */}
-{/* 
-                            <div className="btech-name">
-                                        B.Tech:
-
-                            </div>
-   
-                            <div className="branches">
-                                    <div className="CSE-back">
-                                            <div className="span">CSE</div>
-                                        </div>
-                                        <div className="ECE-back">
-                                            <div className="span">ECE</div>
-                                        </div>
-                                        <div className="EEE-back">
-                                            <div className="span">EEE</div>
-                                        </div>
-                                        <div className="CIVIL-back">
-                                            <div className="span"> CIVIL</div>
-                                        </div>
-                                        <div className="SH-back">
-                                            <div className="span">SH</div>
-                                        </div>
-                            </div>
-            </div>
-            <div className="btech-branches">
-                <div className="btech-name">
-                          Diploma:
-
-                </div>
-                <div className="branches">
+            <h1>Open access Links</h1>
+           
+           
+           <div className='openlinks-main-container'>
+                        <div className="openlinks-matter">
+                        You can go through the open access platforms where you can find many e-journals, publishers, e-books etc..
                     
-                        <div className="dce-back">
-                                <div  className="span" >DCE</div>
-                            </div>
-                            <div className="dme-back">
-                                <div  className="span" >DME</div>
-                            </div>
-                            <div className="deee-back">
-                                <div  className="span" > DEEE</div>
-                            </div>
-                            <div className="dece-back">
-                                <div  className="span" >DECE</div>
-                            </div>
-                            <div className="dcme-back">
-                                <div  className="span" >DCME</div>
-                            </div>
+                            
+                        </div>
+                        <div className='openlinks-container'>
+                                <div className='national-dl'>
+                                    <a href="https://ndl.iitkgp.ac.in/"> <img className='ndli-logo' src={ndli}></img> </a> 
+                                </div>
+                                <div className='bookboon'>
+                                <a href="https://www.bookboon.com"> <img className='bookboon-logo' src={bookboon}></img> </a>   
+                                </div>
+                                <div className='pdf-drive'>
+                                <a href="https://www.pdfdrive.com/category/43">   <img className='pdfdrive-logo' src={pdfdrive}></img></a>  
+                                </div>
+                                <div className="faadoo engineers">
+                                <a href=" https://www.faadooengineers.com">   <img className='faadoo-logo' src={faadooengineers}></img></a>  
 
-                </div>
+                                </div>
+                                <div className="coursera">
+                                <a href="https://www.coursera.org">  <img className='coursera-logo' src={coursera}></img></a>   
+
+                                </div>
+                                <div className='obooko'>
+                                <a href="https://www.obooko.com">  <img className='obooko-logo' src={obooko}></img></a>  
+
+                                </div>
+                                <div className='niscair'>
+                                <a href=" http://op.niscair.res.in">   <img className='niscir-logo' src={niscir}></img></a>  
+                                </div>
+                                <div className='scientific-research'>
+                                <a href=" https://www.scirp.org/journal/index.aspx"><img className='scienceresearch-logo' src={scientificresearch}></img> </a>   
+                                </div>
+                                <div className="springer-open">
+                                <a href="https://www.springeropen.com">  <img className='springer-logo' src={springeropen}></img> </a> 
+                                </div>
+                                {/* <div className="oajse">
+                                <a href="http://oajse.com/a-z/a.html">  <img className='oajse-logo' src={oajse}></img> </a>  
+                                </div> */}
+
+                            </div>
+           </div>
           
-            </div> */}
-            <div className='journals-container'>
-                <div className='journal-matter'>You can access the paid journals through the free e-resources option offered by the Digital Library.
-             <br></br>   For the credentials for the journal platforms listed below, get in touch with the college library. </div>
-
-
-
-
-                <div className="journals-logo-container">
-                            <div className='knimbus'>
-                               <a href='https://www.knimbus.com'><img className='knimbus-logo' src={knimbuslogo}></img></a> 
-                                
-                            </div>
-                            <div className='delnet'>
-                            <a href='http://www.delnet.in/'><img className='delnet-logo' src={delnetlogo}></img></a>  
-
-                            </div>
-                            <div className='nlist'>
-                            <a href=' https://nlist.inflibnet.ac.in/'> <img className="nlist-logo" src={nlistlogo}></img></a> 
-
-                            </div>
-
-                </div>
-               
-
-            </div>
+         
                 
                     
                
@@ -194,4 +175,4 @@ function Ejournals() {
     );
 }
 
-export default Ejournals;
+export default OpenLinks;

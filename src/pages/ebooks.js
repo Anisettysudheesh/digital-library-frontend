@@ -13,6 +13,7 @@ import nbalogo from "../logos/nbalogo.png"
 import naaclogo from "../logos/naaclogo.png"
 import {store} from "../App"
 import {jwtDecode} from "jwt-decode"
+import linkslogo from "../logos/other links.png"
 function Ebooks() {
        const[token]=useContext(store)
         const storedToken = localStorage.getItem('token');
@@ -84,6 +85,10 @@ function Ebooks() {
                                              <Link to="/quepapers"><img src={qplogo} alt="Logout" className="qp-logo-nav" /></Link>  
                                          <span className="tooltip-text-nav">Question Papers</span>
                                          </div>
+                                          <div className="logo-container-nav">
+                                                                                 <Link to="/links"><img src={linkslogo} alt="Journals" className="journal-logo-nav" /></Link>  
+                                                                                     <span className="tooltip-text-nav">other links</span>
+                                                                                 </div>
                                     </div>
                                     <div className="menu-2-nav">
                                         <div className="logo-container-nav">

@@ -438,6 +438,122 @@ flex-wrap: wrap;
     transform: rotate(-30deg);
 
 }
+.journals-container{
+    display:flex;
+    flex-direction: column;
+    gap:1rem
+}
+.journal-matter{
+    display: flex;
+    justify-content: center; /* Center content inside the container */
+    align-items: center; /* Center content vertically */
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 70%; /* Allow dynamic resizing */
+    margin: 0 auto;
+}
+.journals-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+
+
+.knimbus-logo{
+    width:250px;
+    height:150px;
+    border-radius: 10px;
+
+}
+.delnet-logo{
+    width:250px;
+    height:150px;
+    border-radius: 10px;
+
+}
+.nlist-logo{
+    width:300px;
+    height:150px;
+    border-radius: 10px;
+
+}
+.openlinks-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem
+}
+.openlinks-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    flex-wrap: wrap;
+
+}
+.openlinks-matter{
+    font-size: 1rem;
+    font-weight:700;
+    color: rgb(0, 0, 0);
+    font-family: Poppins, sans-serif;
+
+}
+.ndli-logo{
+    width:250px;
+    height:150px;
+    border-radius: 10px;
+}
+.bookboon-logo{
+    width:250px;
+    height:150px;
+    border-radius: 10px;
+}
+.pdfdrive-logo{
+    width:250px;
+    height:150px;
+    border-radius: 10px;
+}
+.faadoo-logo{
+    width:250px;
+    height:150px;
+    border-radius: 10px;    
+}
+.coursera-logo{
+    width:250px;
+    height:150px;
+    border-radius: 10px;    
+}
+.obooko-logo{
+    width:250px;
+    height:150px;
+    border-radius: 10px;    
+}
+
+.niscir-logo{
+    width:250px;
+    height:150px;
+    border-radius: 10px;
+}
+.scienceresearch-logo{
+    width:250px;
+    height:150px;
+    border-radius: 10px;
+}
+.springer-logo{
+    width:250px;
+    height:150px;
+    border-radius: 10px;
+}
+.oajse-logo{
+    width:250px;
+    height:150px;
+    border-radius: 10px;
+}
 
  @media(max-width:1501px){
     .navbar-name{
@@ -1352,6 +1468,41 @@ margin-top:3rem
         height:50px;
         margin-top: -4px;
     }
+    .journal-matter{
+        font-size:0.7rem;
+        max-width:90%
+    }
+    .knimbus-logo{
+        width:120px;
+        height:100px
+    }
+    .delnet-logo{
+        width:120px;
+        height:100px
+    }
+    .nlist-logo{
+        width:200px;
+        height:100px
+    }
+    .openlinks-matter{
+        font-size:0.8rem
+    }
+    .ndli-logo,
+    .bookboon-logo,
+    .pdfdrive-logo,
+    .faadoo-logo,
+    .coursera-logo,
+    .obooko-logo,
+    .niscir-logo,
+    .scienceresearch-logo,
+    .springer-logo,
+    .oajse-logo{
+        width:120px;
+        height:100px;
+    }
+    .openlinks-container{
+        gap:1.6rem
+    }
    
 
 }
@@ -1512,6 +1663,23 @@ margin-top:3rem
         /* .nptel-page-content img{
             margin-top:0.2rem
         } */
+
+        .journal-matter{
+            font-size:0.7rem;
+            max-width:90%
+        }
+        .knimbus-logo{
+            width:120px;
+            height:100px
+        }
+        .delnet-logo{
+            width:120px;
+            height:100px
+        }
+        .nlist-logo{
+            width:200px;
+            height:100px
+        }
 }
 @media(max-width:421px){
     
@@ -1537,6 +1705,21 @@ margin-top:3rem
        
        
     }  
+    .journal-matter{
+        font-size:0.5rem
+    }
+    .knimbus-logo{
+        width:100px;
+        height:80px
+    }
+    .delnet-logo{
+        width:100px;
+        height:80px
+    }
+    .nlist-logo{
+        width:150px;
+        height:70px
+    }
 
 }
 

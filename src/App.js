@@ -12,6 +12,7 @@ import Ebooks from './pages/ebooks';
 import Ejournals from './pages/ejournals';
 import Changepass from './pages/changepass';
 import Quepapers from './pages/quepapers';
+import OpenLinks from './pages/openlinks';
 
 export const store = createContext();
 
@@ -98,6 +99,7 @@ function MainContent() {
       <Route path="/e-journals" element={<Ejournals/>}/>
       <Route path="/Changepass" element={<Changepass/>}/>
       <Route path="/quepapers" element={<Quepapers/>}   />
+      <Route path="/links" element={<OpenLinks/>} />
     
     </Routes>
   </div>

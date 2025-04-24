@@ -16,6 +16,7 @@ import qplogo from "../logos/qplogo.png"
 import nbalogo from "../logos/nbalogo.png"
 import naaclogo from "../logos/naaclogo.png"   
 import qpmiddlelogo from "../logos/qp-middle-logo.png" 
+import linkslogo from "../logos/other links.png"
 
 function UserDashboard() {
     const[token]=useContext(store)
@@ -97,6 +98,10 @@ function UserDashboard() {
                                                                  
                              <span className="tooltip-text">Question Papers</span>
                                     </div>
+                            <div className="logo-container">
+                              <Link to="/links"><img src={linkslogo} alt="Journals" className="journal-logo-nav" /></Link>  
+                                           <span className="tooltip-text">other links</span>
+                             </div>           
                     </div>
                     <div className="menu-2">
                         <div className="logo-container">

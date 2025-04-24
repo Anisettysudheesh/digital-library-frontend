@@ -13,6 +13,7 @@ import nbalogo from "../logos/nbalogo.png"
 import naaclogo from "../logos/naaclogo.png"
 import nptellinklogo from "../logos/nptel-link-logo.png"
 import swayamlinklogo from "../logos/swaym-link-logo.png"
+import linkslogo from "../logos/other links.png"
 import {store} from "../App"
 import {jwtDecode} from "jwt-decode"
 
@@ -76,6 +77,10 @@ function Nptel() {
                                          
                                             <span className="tooltip-text-nav">Question Papers</span>
                                         </div>
+                                         <div className="logo-container-nav">
+                                                                                <Link to="/links"><img src={linkslogo} alt="Journals" className="journal-logo-nav" /></Link>  
+                                                                                    <span className="tooltip-text-nav">other links</span>
+                                                                                </div>
                                     </div>
                                     <div className="menu-2-nav">
                                         <div className="logo-container-nav">
