@@ -494,6 +494,7 @@ flex-wrap: wrap;
     align-items: center;
     gap:1rem;
     flex-wrap: wrap;
+    
 
 }
 .openlinks-matter{
@@ -553,6 +554,19 @@ flex-wrap: wrap;
     width:250px;
     height:150px;
     border-radius: 10px;
+}
+.morelinks-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.morelinks-logo{
+    width:50px;
+    height:40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5); 
+
 }
 
  @media(max-width:1501px){
@@ -1669,11 +1683,11 @@ margin-top:3rem
             max-width:100%
         }
         .knimbus-logo{
-            width:120px;
+            width:125px;
             height:100px
         }
         .delnet-logo{
-            width:120px;
+            width:125px;
             height:100px
         }
         .nlist-logo{
@@ -1720,6 +1734,25 @@ margin-top:3rem
         width:150px;
         height:70px
     }
+
+}
+@media(max-width:400px){
+.journal-matter{
+    font-size:0.7rem
+}
+.morelinks-matter{
+    font-size:0.5rem
+
+}
+.morelinks-container{
+    justify-content: start;
+}
+.morelinks-logo{
+    width:20px;
+    height:10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);   
+}
 
 }
 

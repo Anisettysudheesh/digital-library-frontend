@@ -111,6 +111,7 @@ function Quepapers() {
                 
             <div className="nptel-page-content">
             <h1>Question Papers</h1>
+            <div className='journal-matter'>Depending on your branch, determine your needs.</div>
             <div className="btech-branches">
                 <div className='btech-name'>
                                B.Tech:  

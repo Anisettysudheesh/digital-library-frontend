@@ -27,6 +27,7 @@ import niscir from "../logos/niscir.jpg"
 import scientificresearch from "../logos/scientificresearch.png"
 import springeropen from "../logos/springeropen.png"
 import oajse from "../logos/oajse.jpg"
+import morelinks from "../logos/morelinks.jpg"
 function OpenLinks() {
     const[token]=useContext(store)
     const storedToken = localStorage.getItem('token');
@@ -165,7 +166,13 @@ function OpenLinks() {
                                 </div> */}
 
                             </div>
+
            </div>
+           
+                            <div className='morelinks-container'>
+                               <div><a className='morelinks-matter' style={{textDecoration:"none",color:"black"}}  href="https://www.ajol.info">You can access the more open access links by clicking here</a></div> 
+                               <div><a href="https://www.ajol.info"> <img className='morelinks-logo' src={morelinks}></img> </a></div> 
+                            </div>
           
          
                 

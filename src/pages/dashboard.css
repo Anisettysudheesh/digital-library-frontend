@@ -975,6 +975,35 @@ margin-top: 0.5rem;
     
         }
     }
+    @media(max-width:385px){
+        .nptel-middle-logo{
+            width:60px;
+            height:60px
+        }
+        .ebook-middle-logo{
+            width:90px;
+            height:60px
+        }
+        .journal-middle-logo{   
+            width:70px;
+            height:70px
+    
+        }
+        .nptel-content,
+        .ebook-content,
+        .journal-content{
+            width: 60px;
+            height: 60px;
+    
+        }
+        .middle-content-3{
+            gap: 1rem;
+            padding: 0.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+    }
 
 
 

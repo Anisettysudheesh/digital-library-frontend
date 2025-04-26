@@ -77,14 +77,15 @@ function Ebooks() {
                                             <span className="tooltip-text-nav">e-Books</span>
                                         </div>
                                         <div className="logo-container-nav">
-                                        <Link to="/E-journals"><img src={journal} alt="Journals" className="journal-logo-nav" /></Link>  
-                                            <span className="tooltip-text-nav">e-Journals</span>
-                                        </div>
-                                         <div className="logo-container-nav">
                                          <p className="qp">Q&P</p>
                                              <Link to="/quepapers"><img src={qplogo} alt="Logout" className="qp-logo-nav" /></Link>  
                                          <span className="tooltip-text-nav">Question Papers</span>
                                          </div>
+                                        <div className="logo-container-nav">
+                                        <Link to="/E-journals"><img src={journal} alt="Journals" className="journal-logo-nav" /></Link>  
+                                            <span className="tooltip-text-nav">e-Journals</span>
+                                        </div>
+                                       
                                           <div className="logo-container-nav">
                                                                                  <Link to="/links"><img src={linkslogo} alt="Journals" className="journal-logo-nav" /></Link>  
                                                                                      <span className="tooltip-text-nav">other links</span>
@@ -106,6 +107,7 @@ function Ebooks() {
                 
             <div className="nptel-page-content">
             <h1><img src={ebookpagelogo} alt=""className="eb" ></img>e-Books</h1>
+            <div className='journal-matter'>Depending on your branch, determine your needs.</div>
             <div className="btech-branches">
                     <div className="btech-name">
                                    B.Tech:

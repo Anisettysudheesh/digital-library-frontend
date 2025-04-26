@@ -163,7 +163,7 @@ function Ejournals() {
           
             </div> */}
             <div className='journals-container'>
-                <div className='journal-matter'>You can access the paid journals through the free e-resources option offered by the Digital Library.
+                <div className='journal-matter'>You can access the paid journals through the e-resources option offered by the Digital Library.
              <br></br>   For the credentials for the journal platforms listed below, get in touch with the college library. </div>
 
 
