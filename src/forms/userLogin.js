@@ -38,7 +38,7 @@ function UserLogin() {
         }
 
         const Data = {
-            username: username,
+            username: username.toLowerCase(),
             password: password
         };
 
