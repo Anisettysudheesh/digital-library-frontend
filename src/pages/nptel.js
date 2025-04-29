@@ -118,22 +118,22 @@ and Roorkee).
                         </div>
                          <div className="branches">
                                         <div className="SH-back">
-                                              <a style={{ textDecoration:"none"}} href="https://docs.google.com/document/d/1_LEayuzBZCFlwvAV0eF0L_2hsM7LmnSA/edit"><div className="span">SH</div></a>  
+                                              <a style={{ textDecoration:"none"}} href="https://drive.google.com/file/d/1dHYtPNagfmyBE2toFIuDBaDVoN49AuC0/view?usp=sharing"><div className="span">SH</div></a>  
                                     </div> 
                                  <div className="CSE-back">
-                                                  <a style={{ textDecoration:"none"}} href="https://docs.google.com/document/d/172W8OD1isE2y5FvnqEFdB2vnR8V1vuUw/edit"> <div className="span" >CSE</div></a>  
+                                                  <a style={{ textDecoration:"none"}} href="https://drive.google.com/file/d/1Rv01WXb3Nxbq_vCeucw3z1hsiM6iwIZ7/view?usp=sharing"> <div className="span" >CSE</div></a>  
                                      </div>
                                 <div className="ECE-back">
-                                                 <a style={{ textDecoration:"none"}} href="https://docs.google.com/document/d/1hH69tCNFEum0MLEJD0D3lUPGrDyE374-/edit"> <div className="span" >ECE</div></a>  
+                                                 <a style={{ textDecoration:"none"}} href="https://drive.google.com/file/d/114tC-ngec98etsk1CijuSrqxl0JpDD8h/view?usp=sharing"> <div className="span" >ECE</div></a>  
                                 </div>
                                     <div className="EEE-back">
-                                                     <a style={{ textDecoration:"none"}} href="https://docs.google.com/document/d/1zQ7Bsy5Brqx3bwZMuuX8E3QCiBb8KXio/edit"><div className="span">EEE</div></a>  
+                                                     <a style={{ textDecoration:"none"}} href="https://drive.google.com/file/d/1xXD2IJ9oR0qo4MLU3TTPz-E1gjT1S7Hr/view?usp=sharing"><div className="span">EEE</div></a>  
                                     </div>
                                     <div className="CIVIL-back">
-                                                <a style={{ textDecoration:"none"}}  href="https://docs.google.com/document/d/1A9U3EjpsY_jDLPR0PRG1zbPYeSEw7zTo/edit "><div className="span" > CIVIL</div></a>  
+                                                <a style={{ textDecoration:"none"}}  href=" https://drive.google.com/file/d/1o22E1QuomYl2QG4lrrqNgQZyPTsCBnBz/view?usp=sharing"><div className="span" > CIVIL</div></a>  
                                     </div>
                                     <div className="SH-back">
-                                                <a style={{ textDecoration:"none"}} href="https://docs.google.com/document/d/16oQAqxQruVkb-sxI90tW3VA4zJZXmZeQ/edit?rtpof=true"><div className="span">MECH</div></a>   
+                                                <a style={{ textDecoration:"none"}} href="https://drive.google.com/file/d/1_oR2dgdsQoDKwojk2lbfvfQaS5M0Klgx/view?usp=sharing"><div className="span">MECH</div></a>   
                                     </div> 
                                    
                      </div>   
