@@ -170,7 +170,7 @@ function OpenLinks() {
            </div>
            
                             <div className='morelinks-container'>
-                               <div><a className='morelinks-matter' style={{textDecoration:"none",color:"black"}}  href="https://drive.google.com/file/d/1qqaAp6Q9qDRX8p8KRbone1tzHNgB5GdX/view?usp=sharing">You can access the more open access links by clicking here</a></div> 
+                               <div><a className='morelinks-matter'  href="https://drive.google.com/file/d/1qqaAp6Q9qDRX8p8KRbone1tzHNgB5GdX/view?usp=sharing">You can access the more open access links by clicking here</a></div> 
                                <div><a href="https://drive.google.com/file/d/1qqaAp6Q9qDRX8p8KRbone1tzHNgB5GdX/view?usp=sharing"> <img className='morelinks-logo' src={morelinks}></img> </a></div> 
                             </div>
           

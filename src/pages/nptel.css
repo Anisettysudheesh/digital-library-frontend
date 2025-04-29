@@ -560,6 +560,7 @@ flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 0.5rem;
 }
 .morelinks-logo{
     width:50px;
@@ -567,6 +568,16 @@ flex-wrap: wrap;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.5); 
 
+}
+.morelinks-matter{
+    font-size: 1rem;
+    font-weight:700;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    max-width: 70%; /* Allow dynamic resizing */
+    margin: 0 auto;
+    text-decoration: none;
+    color:#EC8535
 }
 
  @media(max-width:1501px){
