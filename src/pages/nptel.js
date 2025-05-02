@@ -118,7 +118,7 @@ and Roorkee).
                         </div>
                          <div className="branches">
                                         <div className="SH-back">
-                                              <a style={{ textDecoration:"none"}} href="https://drive.google.com/file/d/1dHYtPNagfmyBE2toFIuDBaDVoN49AuC0/view?usp=sharing"><div className="span">SH</div></a>  
+                                              <a style={{ textDecoration:"none"}} href="https://drive.google.com/file/d/1dHYtPNagfmyBE2toFIuDBaDVoN49AuC0/view?usp=sharing"><div className="span">S&H</div></a>  
                                     </div> 
                                  <div className="CSE-back">
                                                   <a style={{ textDecoration:"none"}} href="https://drive.google.com/file/d/1Rv01WXb3Nxbq_vCeucw3z1hsiM6iwIZ7/view?usp=sharing"> <div className="span" >CSE</div></a>  
