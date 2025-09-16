@@ -12,9 +12,11 @@ import qplogo from "../logos/qplogo.png"
 import nbalogo from "../logos/nbalogo.png"
 import naaclogo from "../logos/naaclogo.png"
 import {store} from "../App"
+import { useToast } from '../components/ToastProvider';
 import {jwtDecode} from "jwt-decode"
 import linkslogo from "../logos/other links.png"
 function Ebooks() {
+    const { showToast } = useToast();
        const[token]=useContext(store)
         const storedToken = localStorage.getItem('token');
         const navigate = useNavigate();
@@ -23,21 +25,21 @@ function Ebooks() {
     
         useEffect(() => {
             if (!token || !storedToken) {
-                alert("Please login again");
+                showToast('error', 'Please login again');
                 navigate('/');
             } else {
                 try {
                     const decodedToken = jwtDecode(storedToken);
                     const currentTime = Date.now() / 1000;
-        
+
                     if (decodedToken.exp < currentTime) {
-                        alert("Session expired. Please login again.");
+                        showToast('warning', 'Session expired. Please login again.');
                         localStorage.removeItem('token');
                         navigate('/');
                     }
                 } catch (error) {
                     console.error("Invalid token:", error);
-                    alert("Invalid token. Please login again.");
+                    showToast('error', 'Invalid token. Please login again.');
                     localStorage.removeItem('token');
                     navigate('/');
                 }

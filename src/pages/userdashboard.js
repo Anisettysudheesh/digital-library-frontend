@@ -12,6 +12,7 @@ import journalmiddlelogo from "../logos/journal-middle-logo.png";
 import axios from "axios"
 import {Link,useNavigate} from "react-router-dom"
 import {store} from "../App"
+import { useToast } from '../components/ToastProvider';
 import qplogo from "../logos/qplogo.png"
 import nbalogo from "../logos/nbalogo.png"
 import naaclogo from "../logos/naaclogo.png"   
@@ -19,6 +20,7 @@ import qpmiddlelogo from "../logos/qp-middle-logo.png"
 import linkslogo from "../logos/other links.png"
 
 function UserDashboard() {
+    const { showToast } = useToast();
     const[token]=useContext(store)
     const storedToken = localStorage.getItem('token');
     const navigate = useNavigate();
@@ -27,7 +29,7 @@ function UserDashboard() {
 
     useEffect(()=>{
         if (!token || !storedToken) {
-            alert("please login again")
+            showToast('error', 'Please login again');
             navigate('/');
         }
     const fetchData = async () => {
@@ -37,13 +39,15 @@ function UserDashboard() {
                     "x-token":token || storedToken
                 }
             });
-            console.log(response);
+            if (response && response.status === 200) {
+                showToast('success', 'Hi! Welcome to Digital Library');
+            }
         } catch (error) {
-            console.log(error);
             if (error.response && error.response.status === 401) {
-                alert("please login again")
+                showToast('error', 'Please login again');
                 navigate('/');
             } else {
+                showToast('error', error.response?.data || 'Error fetching data');
                 console.error("Error fetching data:", error);
             }
         }

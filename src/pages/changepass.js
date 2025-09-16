@@ -9,12 +9,14 @@ import { Link } from "react-router-dom";
 import "./changepass.css";
 import axios from "axios";
 import { store } from "../App";
+import { useToast } from '../components/ToastProvider';
 import qplogo from "../logos/qplogo.png";
 import nbalogo from "../logos/nbalogo.png"
 import naaclogo from "../logos/naaclogo.png"
 import linkslogo from "../logos/other links.png"
 
 function Changepass() {
+    const { showToast } = useToast();
     const [oldpass, setOldpass] = useState("");
     const [newpass, setNewpass] = useState("");
     const [confirmpass, setConfirmpass] = useState("");
@@ -26,11 +28,11 @@ function Changepass() {
         e.preventDefault();
 
         if (newpass !== confirmpass) {
-            alert("New password and confirm password do not match");
+            showToast('error', 'New password and confirm password do not match');
             return;
         }
         if (!oldpass || !newpass) {
-            alert("Both old and new passwords are required");
+            showToast('error', 'Both old and new passwords are required');
             return;
         }
 
@@ -42,10 +44,10 @@ function Changepass() {
                     "x-token": token || storedToken
                 }
             });
-            console.log(SendData);
-            alert(SendData.data);
+            showToast('success', SendData.data);
         } catch (error) {
-            console.log(error);
+            showToast('error', error.response?.data || 'Failed to change password');
+            console.error(error);
         }
     };
 

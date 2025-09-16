@@ -15,10 +15,12 @@ import nptellinklogo from "../logos/nptel-link-logo.png"
 import swayamlinklogo from "../logos/swaym-link-logo.png"
 import linkslogo from "../logos/other links.png"
 import {store} from "../App"
+import { useToast } from '../components/ToastProvider';
 import {jwtDecode} from "jwt-decode"
 
 
 function Nptel() {
+    const { showToast } = useToast();
     const[token]=useContext(store)
     const storedToken = localStorage.getItem('token');
     const navigate = useNavigate();
@@ -27,7 +29,7 @@ function Nptel() {
 
     useEffect(()=>{
         if (!token || !storedToken) {
-            alert("please login again")
+            showToast('error', 'Please login again');
             navigate('/');
         }
 

@@ -10,6 +10,7 @@ import {jwtDecode} from 'jwt-decode';
 import nbalogo from "../logos/nbalogo.png";
 import naaclogo from "../logos/naaclogo.png";
 import "../pages/dashboard.css"
+import { useToast } from '../components/ToastProvider';
 
 function UserLogin() {
     const [username, setUsername] = useState("");
@@ -19,6 +20,7 @@ function UserLogin() {
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
     const [token, setToken] = useContext(store);
+    const { showToast } = useToast();
 
     const Submit = async (e) => {
         e.preventDefault();
@@ -27,12 +29,14 @@ function UserLogin() {
 
         if (!username || !password) {
             setError("All fields are mandatory");
+            showToast('error', 'All fields are mandatory');
             setLoading(false);
             return;
         }
 
         if (password.length < 6) {
             setError("Password must be at least 6 characters long");
+            showToast('error', 'Password must be at least 6 characters long');
             setLoading(false);
             return;
         }
@@ -56,8 +60,8 @@ function UserLogin() {
            
         } catch (error) {
             setError("Invalid email or password");
-            alert(error.response.data)
-            console.log(error);
+            showToast("error", error.response?.data || "Invalid email or password")
+            console.error(error);
         } finally {
             setLoading(false);
         }
@@ -66,7 +70,7 @@ function UserLogin() {
     return (
         <div>
             
-             <div className="navbar-login"  style={{marginTop:"-5rem"}}>
+             <div className="navbar-login navbar-login-offset">
                                    <div className="gist-logo-container-login">
                                    <Link to="/UserDashboard"> <img className="login-img" src={logo} alt="logo" /></Link> 
                                    <div className="estd-login">Estd:2008</div>
@@ -85,7 +89,7 @@ function UserLogin() {
                                   
                                                          </div>
                         </div>
-                        <div className='login-main-content' style={{marginTop:"5rem"}}>
+                        <div className='login-main-content login-content-offset'>
 
                        
             <h5>LIBRARY AND INFORMATION CENTER</h5>
@@ -99,7 +103,7 @@ function UserLogin() {
                         <img src={userlogo} className="userlogo" alt="user logo" />
                         <h3>User Login</h3>
                     </div>
-                    <p><b style={{ color: "red" }}>Note:</b> Username and password is your University roll number like (eg:222U1A3301)</p>
+                    <p><b className="note-accent">Note:</b> Username and password is your University roll number like (eg:222U1A3301)</p>
                     {/* {error && <p style={{ color: "red" }}>{error}</p>} */}
                     <label>
                         <span className='username'>Username</span>

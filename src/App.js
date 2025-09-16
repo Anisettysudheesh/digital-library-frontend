@@ -13,6 +13,7 @@ import Ejournals from './pages/ejournals';
 import Changepass from './pages/changepass';
 import Quepapers from './pages/quepapers';
 import OpenLinks from './pages/openlinks';
+import { ToastProvider } from './components/ToastProvider';
 
 export const store = createContext();
 
@@ -20,9 +21,11 @@ function App() {
   const tokenState = useToken();
   return (
     <store.Provider value={tokenState}>
-      <BrowserRouter>
+      <ToastProvider>
+        <BrowserRouter>
         <MainContent />
       </BrowserRouter>
+      </ToastProvider>
     </store.Provider>
   );
 }
@@ -107,5 +110,4 @@ function MainContent() {
   );
 }
 
-export default App; 
-
+export default App;
