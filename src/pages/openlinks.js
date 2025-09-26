@@ -29,6 +29,7 @@ import scientificresearch from "../logos/scientificresearch.png"
 import springeropen from "../logos/springeropen.png"
 import oajse from "../logos/oajse.jpg"
 import morelinks from "../logos/morelinks.jpg"
+import doublearrow from "../logos/doublearrow.svg"
 function OpenLinks() {
     const { showToast } = useToast();
     const[token]=useContext(store)
@@ -172,7 +173,8 @@ function OpenLinks() {
            </div>
            
                             <div className='morelinks-container'>
-                               <div><a className='morelinks-matter'  href="https://drive.google.com/drive/folders/1Br9Xv7lbzH_5p7-rsAgG5rvOQ8pBLL4b">You can explore more  <b style={{fontSize:"120%",color:"#EC8535"}}>OPEN ACCESS LINKS</b>  by clicking here</a></div> 
+                                <img src={doublearrow} className="double-arrow"></img>
+                               <div><a className='morelinks-matter'  href="https://drive.google.com/drive/folders/1Br9Xv7lbzH_5p7-rsAgG5rvOQ8pBLL4b">   You can explore more  <b style={{fontSize:"120%",color:"#EC8535"}}>OPEN ACCESS LINKS</b>  by clicking here</a></div> 
                                  {/* <div><a href="https://drive.google.com/drive/folders/1Br9Xv7lbzH_5p7-rsAgG5rvOQ8pBLL4b"> <img className='morelinks-logo' src={morelinks}></img> </a></div>  */}
                             </div>
           

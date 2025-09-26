@@ -92,7 +92,7 @@ function UserLogin() {
                         <div className='login-main-content login-content-offset'>
 
                        
-            <h5>LIBRARY AND INFORMATION CENTER</h5>
+            <h5>LIBRARY AND INFORMATION CENTRE</h5>
             <img className="dl-logo" src={dlogo} alt="Digital Library Logo" />
             <span className="digilib">DIGITAL LIBRARY</span>
             <center>
