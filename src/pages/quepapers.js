@@ -121,24 +121,24 @@ function Quepapers() {
                 </div>
                 <div className="branches">
                               <div className="SH-back">
-                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1ilIJ8mBelmaJ4l_1FHPkT4CvLCT2BmtL" ><div className='span'>S&H</div></a>
+                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/12sUJlwULAjwiN3svr2jr-IexOpEDyBIN" ><div className='span'>S&H</div></a>
                                 </div>
                             <div className="CSE-back">
-                            <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1HrKsyLaoL_JrUyoazeFcBOenyypA9zU_" >
+                            <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/17bRQ4D-XL3bu7156HafTZlT0d3AVdgQ3" >
                             <div className='span'>CSE</div></a>
                                     
                                 </div>
                                 <div className="ECE-back">
-                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1_vMs9uxcnJuOn0DN1CNymAWpkKwbo9wY" ><div className='span'>ECE</div></a>
+                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/19kA3_GaEe12yxSgLnwtstj_kZLVPFSbk" ><div className='span'>ECE</div></a>
                                 </div>
                                 <div className="EEE-back">
-                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1WHq1ENV3TOBVD4bF8kdDFtWWIp929bu1" ><div className='span'>EEE</div></a>
+                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1PU-s30udnPhLpXvtV3sLf87AtUA6Suc8" ><div className='span'>EEE</div></a>
                                 </div>
                                 <div className="CIVIL-back">
-                                    <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1FZEi9w35VBX_pyIgugWkwSHYp65LGFoL" ><div className='span'>CIVIL</div></a>
+                                    <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1eZciSXDc6Xc4zOuIhQyfA8NyLCKKK-7h" ><div className='span'>CIVIL</div></a>
                                 </div>
                                 <div className="SH-back">
-                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/15iWiT1VlosRtjzkebXX3FoMBDv1h2SpQ" ><div className='span'>MECH</div></a>
+                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/12sSY94CvU_K-cUN4GVhm1SlbsiaFKdRE" ><div className='span'>MECH</div></a>
                                 </div>
                     </div>
 
@@ -153,19 +153,22 @@ function Quepapers() {
                 <div className="branches">
                     
                             <div className="dce-back">
-                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1r9TvdVz0O8haPY4MsuLiG6LxeaiJQ_FG" ><div className='span'>DCE</div></a>
+                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1GRwR1cO84k8dqf1NCm8xHkDbbGTEmQXr" ><div className='span'>DCE</div></a>
                                 </div>
                                 <div className="dme-back">
-                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1DtgxGGSrKhqaDSItY_eFIYuvhZv_D2lx" ><div className='span'>DME</div></a>
+                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1ukwDK4zNT_kr0qs4Ypdq6q4p6GSaKDAC" ><div className='span'>DME</div></a>
                                 </div>
                                 <div className="deee-back">
-                                    <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1NW_xk5mokFpAJnH6r7aZghc4PYc5uWl_" ><div className='span'>DEEE</div></a>
+                                    <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1JZ3BJIenp0HKg0NeANzz6E_Ml86q3RAF" ><div className='span'>DEEE</div></a>
                                 </div>
                                 <div className="dece-back">
-                                    <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1xCn_fSPLq4GMb7Hw9jbr0b5iioTbkRT1" ><div className='span'>DECE</div></a>
+                                    <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1X3dDBHoFckhkGtCQ2oPdcIjVHEYMm1kh" ><div className='span'>DECE</div></a>
                                 </div>
                                 <div className="dcme-back">
-                                    <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1ra7wTaOTLtDrdNYkyyI0poLypwxJGT2j" ><div className='span'>DCME</div></a>
+                                    <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1l-tjOsi3aLQqk1XoX2QyUkZnuZffGLQ4" ><div className='span'>DCME</div></a>
+                                </div>
+                                 <div className="dcme-back">
+                                    <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1Cr1837Oze831_DFtu1JLTbGEk9QjoprA" ><div className='span'>Common</div></a>
                                 </div>
 
                 </div>

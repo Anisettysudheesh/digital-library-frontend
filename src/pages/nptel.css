@@ -577,7 +577,8 @@ flex-wrap: wrap;
     max-width: 70%; /* Allow dynamic resizing */
     margin: 0 auto;
     text-decoration: none;
-    color:#EC8535
+    /* color:#EC8535 */
+    /* color:black */
 }
 
  @media(max-width:1501px){
