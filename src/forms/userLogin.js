@@ -48,7 +48,7 @@ function UserLogin() {
         };
 
         try {
-            const sendData= await axios.post("http://localhost:5000/UserLogin", Data);
+            const sendData= await axios.post("https://digital-library-backend-812p.onrender.com/UserLogin", Data);
             const receivedToken = sendData.data.token;
             setToken(receivedToken);
             const decodedToken = jwtDecode(receivedToken)
@@ -56,7 +56,7 @@ function UserLogin() {
           
             if(receivedToken){
                 try{
-                    const counterResponse=await axios.put("http://localhost:5000/Counter",{})
+                    const counterResponse=await axios.put("https://digital-library-backend-812p.onrender.com/Counter",{})
                     console.log("Counter updated:", counterResponse.data.counter);
                 }
                 catch(err){

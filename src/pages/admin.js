@@ -14,7 +14,7 @@ function Admin() {
     const fetchMonthlyCounters = async () => {
         try {
             setLoading(true);
-            let url = 'http://localhost:5000/monthlyCounters';
+            let url = 'https://digital-library-backend-812p.onrender.com/monthlyCounters';
             const params = new URLSearchParams();
             
             if (fromDate) {
