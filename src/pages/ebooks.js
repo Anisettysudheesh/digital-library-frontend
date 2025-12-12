@@ -118,23 +118,23 @@ function Ebooks() {
                      
                      <div className="branches">
                                 <div className="SH-back">
-                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1rnnBjVuBSztjPvmLpdvvDX3sx12n9tKb" ><div  className="span">S&H</div></a>
+                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/u/1/folders/1IWIC5nBsT8-UnYffS7rAqpHenfr2uCNc" ><div  className="span">S&H</div></a>
                                 </div>
                             <div className="CSE-back">
-                            <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/11OyBA6vg7TM94pn7P9_pF-vb9GjSUHFZ" ><div  className="span">CSE</div></a>
+                            <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/u/1/folders/10DgIBJwvFI3r1Mud9MQkcAAcN7oCdgZx" ><div  className="span">CSE</div></a>
                                     
                                 </div>
                                 <div className="ECE-back">
-                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/11XStOsyGEbG30b3tUz2lEKrwSDPJKdRb" ><div  className="span">ECE</div></a>
+                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/u/1/folders/1LvvAHMjWatlvrflax06DbtJ1u3vImfek" ><div  className="span">ECE</div></a>
                                 </div>
                                 <div className="EEE-back">
-                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1Z6ltpldIMnYEqBSEN2ATH9aNWHjZSJzM" ><div  className="span">EEE</div></a>
+                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/u/1/folders/1CTUr8iDLSX675PibHsQJoteiE_SYY6RI" ><div  className="span">EEE</div></a>
                                 </div>
                                 <div className="CIVIL-back">
-                                    <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1REJR4d6AgBPotMZvduAAbOyZb6bVwf3D" ><div  className="span">CIVIL</div></a>
+                                    <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/u/1/folders/1G62gDNq399tdaPbxh9Z3imatxU1aQeeH" ><div  className="span">CIVIL</div></a>
                                 </div>
                                 <div className="SH-back">
-                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/folders/1KuFMb9TamIOvIQXmyR3CRen6rf3JW7vO" ><div  className="span">MECH</div></a>
+                                <a style={{ textDecoration:"none"}}href="https://drive.google.com/drive/u/1/folders/1mr3RmEwc9srMGVZDXvZRrclpEsTHfL-F" ><div  className="span">MECH</div></a>
                                 </div>
                      </div>
            

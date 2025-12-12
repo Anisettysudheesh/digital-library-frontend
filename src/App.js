@@ -14,6 +14,7 @@ import Changepass from './pages/changepass';
 import Quepapers from './pages/quepapers';
 import OpenLinks from './pages/openlinks';
 import { ToastProvider } from './components/ToastProvider';
+import Admin from './pages/admin';
 
 export const store = createContext();
 
@@ -103,6 +104,7 @@ function MainContent() {
       <Route path="/Changepass" element={<Changepass/>}/>
       <Route path="/quepapers" element={<Quepapers/>}   />
       <Route path="/links" element={<OpenLinks/>} />
+      <Route path="/admin" element={<Admin/>} />
     
     </Routes>
   </div>

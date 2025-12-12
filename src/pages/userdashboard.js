@@ -18,7 +18,7 @@ import nbalogo from "../logos/nbalogo.png"
 import naaclogo from "../logos/naaclogo.png"   
 import qpmiddlelogo from "../logos/qp-middle-logo.png" 
 import linkslogo from "../logos/other links.png"
-
+import newspaper from "../logos/Newspaper-img.png"
 function UserDashboard() {
     const { showToast } = useToast();
     const[token]=useContext(store)
@@ -148,6 +148,9 @@ video lectures.
                 </div>
                 <div className="journal-content">
                    <Link to="/quepapers"><img src={qpmiddlelogo} className="journal-middle-logo" alt="question-papers" /></Link> 
+                </div>
+                <div className="journal-content">
+                   <a href="https://drive.google.com/drive/folders/1DZ2qT3ooSPUA7YKpv4waOd1QIxUT6GDa?usp=drive_link" target="_blank"><img src={newspaper} className="journal-middle-logo" alt="newspapers" /></a> 
                 </div>
 
                 </div>

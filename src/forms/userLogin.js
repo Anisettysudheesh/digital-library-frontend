@@ -21,7 +21,8 @@ function UserLogin() {
     const navigate = useNavigate();
     const [token, setToken] = useContext(store);
     const { showToast } = useToast();
-
+  
+  
     const Submit = async (e) => {
         e.preventDefault();
         setError("");
@@ -47,14 +48,22 @@ function UserLogin() {
         };
 
         try {
-            const sendData= await axios.post("https://digital-library-backend-812p.onrender.com/UserLogin", Data);
+            const sendData= await axios.post("http://localhost:5000/UserLogin", Data);
             const receivedToken = sendData.data.token;
             setToken(receivedToken);
             const decodedToken = jwtDecode(receivedToken)
             localStorage.setItem('token', receivedToken);
           
             if(receivedToken){
+                try{
+                    const counterResponse=await axios.put("http://localhost:5000/Counter",{})
+                    console.log("Counter updated:", counterResponse.data.counter);
+                }
+                catch(err){
+                    console.error("Error while fetching user data", err);
+                }
                 navigate("/UserDashboard");
+               
 
             }
            

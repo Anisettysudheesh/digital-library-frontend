@@ -1,0 +1,19 @@
+.none{
+    display:none;
+}
+.visible{
+    display:block;
+}
+
+/* Responsive styles for admin dashboard */
+@media (max-width: 412px) {
+    .admindashboard h1 {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .admindashboard h1 {
+        font-size: 16px !important;
+    }
+}
