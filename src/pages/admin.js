@@ -4,10 +4,12 @@ import './dashboard.css';
 import "./admin.css"
 function Admin() {
     const [monthlyData, setMonthlyData] = useState([]);
+    const [filteredData, setFilteredData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [fromDate, setFromDate] = useState('');
     const [toDate, setToDate] = useState('');
     const [securityKey, setSecurityKey] = useState('');
+    const [searchTerm, setSearchTerm] = useState('');
 
    
    
@@ -51,6 +53,36 @@ function Admin() {
     useEffect(() => {
         fetchMonthlyCounters();
     }, []);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            fetchMonthlyCounters();
+        }, 10000);
+
+        return () => clearInterval(intervalId);
+    }, [fromDate, toDate]);
+
+    useEffect(() => {
+        const normalizedQuery = searchTerm.trim().toLowerCase();
+
+        if (!normalizedQuery) {
+            setFilteredData(monthlyData);
+            return;
+        }
+
+        const filtered = monthlyData.filter((record) => {
+            const yearValue = String(record.year || '').toLowerCase();
+            const monthValue = String(record.month || '').toLowerCase();
+            const countValue = String(record.count ?? '').toLowerCase();
+            return (
+                yearValue.includes(normalizedQuery)
+                || monthValue.includes(normalizedQuery)
+                || countValue.includes(normalizedQuery)
+            );
+        });
+
+        setFilteredData(filtered);
+    }, [monthlyData, searchTerm]);
 
     return (
         <div>
@@ -106,6 +138,24 @@ function Admin() {
                         }}
                     />
                 </div>
+                <div style={{ flex: 1 }}>
+                    <label style={{ display: 'block', marginBottom: '8px', fontWeight: 'bold', color: '#333' }}>
+                        Search:
+                    </label>
+                    <input
+                        type="text"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        placeholder="Search by month, year, or count"
+                        style={{
+                            width: '100%',
+                            padding: '10px',
+                            fontSize: '16px',
+                            border: '1px solid #ddd',
+                            borderRadius: '5px'
+                        }}
+                    />
+                </div>
                 <button
                     onClick={fetchMonthlyCounters}
                     style={{
@@ -149,14 +199,14 @@ function Admin() {
                             </tr>
                         </thead>
                         <tbody>
-                            {monthlyData.length === 0 ? (
+                            {filteredData.length === 0 ? (
                                 <tr>
                                     <td colSpan="4" style={{ padding: '20px', textAlign: 'center', color: '#666' }}>
                                         No monthly data available yet
                                     </td>
                                 </tr>
                             ) : (
-                                monthlyData.map((record, index) => (
+                                filteredData.map((record, index) => (
                                     <tr 
                                         key={record._id}
                                         style={{
@@ -187,10 +237,10 @@ function Admin() {
             <div style={{ marginTop: '30px', padding: '20px', backgroundColor: '#f8f9fa', borderRadius: '8px' }}>
                 <h3 style={{ marginBottom: '10px', color: '#333' }}>Summary</h3>
                 <p style={{ fontSize: '16px', color: '#666' }}>
-                    Total Records: <strong>{monthlyData.length}</strong>
+                    Total Records: <strong>{filteredData.length}</strong>
                 </p>
                 <p style={{ fontSize: '16px', color: '#666' }}>
-                    Total Logins (All Time): <strong>{monthlyData.reduce((sum, record) => sum + record.count, 0)}</strong>
+                    Total Logins (Shown): <strong>{filteredData.reduce((sum, record) => sum + record.count, 0)}</strong>
                 </p>
             </div>
         </div>
