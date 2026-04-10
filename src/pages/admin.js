@@ -8,7 +8,7 @@ function Admin() {
     const [loading, setLoading] = useState(true);
     const [fromDate, setFromDate] = useState('');
     const [toDate, setToDate] = useState('');
-    const [securityKey, setSecurityKey] = useState('');
+    const [securityKey, setSecurityKey] = useState("");
     const [searchTerm, setSearchTerm] = useState('');
 
    
@@ -40,8 +40,8 @@ function Admin() {
     };
 
     const handleContinue = () => {
-        console.log(securityKey);
-         if(securityKey==="admin123"){
+        // console.log(securityKey);
+         if(securityKey===process.env.REACT_APP_ADMIN_KEY){
         document.querySelector('.admin-window').classList.add('none');
         document.querySelector('.admindashboard').classList.remove('none');
         document.querySelector('.admindashboard').classList.add('visible');
