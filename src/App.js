@@ -86,7 +86,7 @@ function MainContent() {
         navigate('/');
       }
     }
-  }, [token, navigate]);
+  }, [token, navigate, setToken]);
 
 
   return (

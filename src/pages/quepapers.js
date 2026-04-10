@@ -7,7 +7,7 @@ import logoutlogo from "../logos/logout.png";
 import passwordlogo from "../logos/password.png";
 import {Link,useNavigate} from "react-router-dom"
 import "./nptel.css";
-import nptelpagelogo from "../logos/nptel-page-logo.png"
+ 
 import qplogo from "../logos/qplogo.png"
 import nbalogo from "../logos/nbalogo.png"
 import naaclogo from "../logos/naaclogo.png"
@@ -45,7 +45,7 @@ function Quepapers() {
                 navigate('/');
             }
         }
-    }, [storedToken, navigate, token]);
+    }, [storedToken, navigate, token, showToast]);
 
     return (
         <div className="nptel-main">

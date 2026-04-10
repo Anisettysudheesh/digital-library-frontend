@@ -47,7 +47,7 @@ function Ejournals() {
                 navigate('/');
             }
         }
-    }, [storedToken, navigate, token]);
+    }, [storedToken, navigate, token, showToast]);
 
     return (
         <div className="nptel-main">
@@ -112,7 +112,7 @@ function Ejournals() {
                        
                 
             <div className="nptel-page-content">
-            <h1><img src ={ejournalpagelogo} width="70px" height="60px"  ></img>e-Journals</h1>
+            <h1><img src ={ejournalpagelogo} width="70px" height="60px" alt="e-journal page logo"></img>e-Journals</h1>
             {/* <div className="btech-branches"> */}
 {/* 
                             <div className="btech-name">
@@ -173,15 +173,15 @@ function Ejournals() {
 
                 <div className="journals-logo-container">
                             <div className='knimbus'>
-                               <a href='https://www.knimbus.com'><img className='knimbus-logo' src={knimbuslogo}></img></a> 
+                               <a href='https://www.knimbus.com'><img className='knimbus-logo' src={knimbuslogo} alt="knimbus logo"></img></a> 
                                 
                             </div>
                             <div className='delnet'>
-                            <a href='http://www.delnet.in/'><img className='delnet-logo' src={delnetlogo}></img></a>  
+                            <a href='http://www.delnet.in/'><img className='delnet-logo' src={delnetlogo} alt="delnet logo"></img></a>  
 
                             </div>
                             <div className='nlist'>
-                            <a href=' https://nlist.inflibnet.ac.in/'> <img className="nlist-logo" src={nlistlogo}></img></a> 
+                            <a href=' https://nlist.inflibnet.ac.in/'> <img className="nlist-logo" src={nlistlogo} alt="nlist logo"></img></a> 
 
                             </div>
 

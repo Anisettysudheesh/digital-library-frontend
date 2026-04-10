@@ -52,6 +52,7 @@ function Admin() {
     };
     useEffect(() => {
         fetchMonthlyCounters();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     useEffect(() => {
@@ -60,6 +61,7 @@ function Admin() {
         }, 10000);
 
         return () => clearInterval(intervalId);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [fromDate, toDate]);
 
     useEffect(() => {

@@ -1,4 +1,4 @@
-import React,{useState, useContext,useEffect} from 'react';
+import React,{ useContext,useEffect} from 'react';
 import logo from "../logos/gist.jpeg";
 import nptellogo from "../logos/nptellogo.png";
 import book from "../logos/e-books.png";
@@ -54,7 +54,7 @@ function UserDashboard() {
     };
 
     fetchData()
-},[storedToken,navigate,token]);
+},[storedToken,navigate,token,showToast]);
 
 
 
@@ -150,7 +150,7 @@ video lectures.
                    <Link to="/quepapers"><img src={qpmiddlelogo} className="journal-middle-logo" alt="question-papers" /></Link> 
                 </div>
                 <div className="journal-content">
-                   <a href="https://drive.google.com/drive/folders/1DZ2qT3ooSPUA7YKpv4waOd1QIxUT6GDa?usp=drive_link" target="_blank"><img src={newspaper} className="journal-middle-logo" alt="newspapers" /></a> 
+                   <a href="https://drive.google.com/drive/folders/1DZ2qT3ooSPUA7YKpv4waOd1QIxUT6GDa?usp=drive_link" target="_blank" rel="noreferrer"><img src={newspaper} className="journal-middle-logo" alt="newspapers" /></a> 
                 </div>
 
                 </div>

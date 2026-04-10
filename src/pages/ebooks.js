@@ -44,7 +44,7 @@ function Ebooks() {
                     navigate('/');
                 }
             }
-        }, [storedToken, navigate, token]);
+        }, [storedToken, navigate, token, showToast]);
     
     return (
         <div className="nptel-main">

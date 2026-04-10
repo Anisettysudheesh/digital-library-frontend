@@ -16,10 +16,10 @@ function UserLogin() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
-    const [error, setError] = useState("");
+    const [, setError] = useState("");
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
-    const [token, setToken] = useContext(store);
+    const [, setToken] = useContext(store);
     const { showToast } = useToast();
   
   
@@ -51,7 +51,7 @@ function UserLogin() {
             const sendData= await axios.post("https://digital-library-backend-812p.onrender.com/UserLogin", Data);
             const receivedToken = sendData.data.token;
             setToken(receivedToken);
-            const decodedToken = jwtDecode(receivedToken)
+            jwtDecode(receivedToken)
             localStorage.setItem('token', receivedToken);
           
             if(receivedToken){

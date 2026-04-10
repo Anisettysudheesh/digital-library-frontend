@@ -16,7 +16,7 @@ import swayamlinklogo from "../logos/swaym-link-logo.png"
 import linkslogo from "../logos/other links.png"
 import {store} from "../App"
 import { useToast } from '../components/ToastProvider';
-import {jwtDecode} from "jwt-decode"
+ 
 
 
 function Nptel() {
@@ -34,7 +34,7 @@ function Nptel() {
         }
 
 
-},[storedToken,navigate,token]);
+},[storedToken,navigate,token,showToast]);
 
     return (
         <div className="nptel-main">

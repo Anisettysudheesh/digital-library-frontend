@@ -7,16 +7,14 @@ import logoutlogo from "../logos/logout.png"
 import passwordlogo from "../logos/password.png"
 import {Link,useNavigate} from "react-router-dom"
 import "./nptel.css"
-import ejournalpagelogo from "../logos/journal-page-logo.png"
+ 
 import qplogo from "../logos/qplogo.png"
 import nbalogo from "../logos/nbalogo.png"
 import naaclogo from "../logos/naaclogo.png"
 import {store} from "../App"
 import { useToast } from '../components/ToastProvider';
 import {jwtDecode} from "jwt-decode"
-import delnetlogo from "../logos/delnet-logo.png"
-import nlistlogo from "../logos/nlist-logo.jpeg"
-import knimbuslogo from "../logos/knimbus-logo.png"
+ 
 import linkslogo from "../logos/other links.png"
 import ndli from "../logos/ndli.jpg"
 import bookboon from "../logos/bookboon.jpg"
@@ -27,8 +25,7 @@ import obooko from "../logos/obooko.png"
 import niscir from "../logos/niscir.jpg"
 import scientificresearch from "../logos/scientificresearch.png"
 import springeropen from "../logos/springeropen.png"
-import oajse from "../logos/oajse.jpg"
-import morelinks from "../logos/morelinks.jpg"
+ 
 import doublearrow from "../logos/doublearrow.svg"
 function OpenLinks() {
     const { showToast } = useToast();
@@ -59,7 +56,7 @@ function OpenLinks() {
                 navigate('/');
             }
         }
-    }, [storedToken, navigate, token]);
+    }, [storedToken, navigate, token, showToast]);
 
     return (
         <div className="nptel-main">
@@ -135,34 +132,34 @@ function OpenLinks() {
                         </div>
                         <div className='openlinks-container'>
                                 <div className='national-dl'>
-                                    <a href="https://ndl.iitkgp.ac.in/"> <img className='ndli-logo' src={ndli}></img> </a> 
+                                    <a href="https://ndl.iitkgp.ac.in/"> <img className='ndli-logo' src={ndli} alt="ndli"></img> </a> 
                                 </div>
                                 <div className='bookboon'>
-                                <a href="https://www.bookboon.com"> <img className='bookboon-logo' src={bookboon}></img> </a>   
+                                <a href="https://www.bookboon.com"> <img className='bookboon-logo' src={bookboon} alt="bookboon"></img> </a>   
                                 </div>
                                 <div className='pdf-drive'>
-                                <a href="https://www.pdfdrive.com/category/43">   <img className='pdfdrive-logo' src={pdfdrive}></img></a>  
+                                <a href="https://www.pdfdrive.com/category/43">   <img className='pdfdrive-logo' src={pdfdrive} alt="pdfdrive"></img></a>  
                                 </div>
                                 <div className="faadoo engineers">
-                                <a href=" https://www.faadooengineers.com">   <img className='faadoo-logo' src={faadooengineers}></img></a>  
+                                <a href=" https://www.faadooengineers.com">   <img className='faadoo-logo' src={faadooengineers} alt="faadoo"></img></a>  
 
                                 </div>
                                 <div className="coursera">
-                                <a href="https://www.coursera.org">  <img className='coursera-logo' src={coursera}></img></a>   
+                                <a href="https://www.coursera.org">  <img className='coursera-logo' src={coursera} alt="coursera"></img></a>   
 
                                 </div>
                                 <div className='obooko'>
-                                <a href="https://www.obooko.com">  <img className='obooko-logo' src={obooko}></img></a>  
+                                <a href="https://www.obooko.com">  <img className='obooko-logo' src={obooko} alt="obooko"></img></a>  
 
                                 </div>
                                 <div className='niscair'>
-                                <a href=" http://op.niscair.res.in">   <img className='niscir-logo' src={niscir}></img></a>  
+                                <a href=" http://op.niscair.res.in">   <img className='niscir-logo' src={niscir} alt="niscair"></img></a>  
                                 </div>
                                 <div className='scientific-research'>
-                                <a href=" https://www.scirp.org/journal/index.aspx"><img className='scienceresearch-logo' src={scientificresearch}></img> </a>   
+                                <a href=" https://www.scirp.org/journal/index.aspx"><img className='scienceresearch-logo' src={scientificresearch} alt="scientific research"></img> </a>   
                                 </div>
                                 <div className="springer-open">
-                                <a href="https://www.springeropen.com">  <img className='springer-logo' src={springeropen}></img> </a> 
+                                <a href="https://www.springeropen.com">  <img className='springer-logo' src={springeropen} alt="springer open"></img> </a> 
                                 </div>
                                 {/* <div className="oajse">
                                 <a href="http://oajse.com/a-z/a.html">  <img className='oajse-logo' src={oajse}></img> </a>  
@@ -173,7 +170,7 @@ function OpenLinks() {
            </div>
            
                             <div className='morelinks-container'>
-                                <img src={doublearrow} className="double-arrow"></img>
+                                <img src={doublearrow} className="double-arrow" alt="arrow"></img>
                                <div><a className='morelinks-matter'  href="https://drive.google.com/drive/folders/1Br9Xv7lbzH_5p7-rsAgG5rvOQ8pBLL4b">   You can explore more  <b style={{fontSize:"120%",color:"#EC8535"}}>OPEN ACCESS LINKS</b>  by clicking here</a></div> 
                                  {/* <div><a href="https://drive.google.com/drive/folders/1Br9Xv7lbzH_5p7-rsAgG5rvOQ8pBLL4b"> <img className='morelinks-logo' src={morelinks}></img> </a></div>  */}
                             </div>
